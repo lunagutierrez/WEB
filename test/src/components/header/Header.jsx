@@ -3,7 +3,7 @@ import logo from "../../assets/img/logo.png"
 
 function Header() {
 
-    return (
+    return ( 
         
   <nav id="navbar-logged-out" class="navbar navbar-expand-lg">
   <div class="container-fluid">
