@@ -1,0 +1,15 @@
+
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+
+    background-color: #DA0080;
+    width: 20%;
+    border: 5px;
+}
+
+.service-item p{
+  text-align: justify;
+}
