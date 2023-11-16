@@ -53,3 +53,8 @@ select {
     align-items: center;
     border-radius: 0 4px 4px 0;
 }
+
+select option {
+    background-color: #fff;
+    color: #1E120E;
+}

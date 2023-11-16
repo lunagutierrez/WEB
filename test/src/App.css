@@ -3,3 +3,12 @@
   height: 100%;
 }
 
+.btn-pink {
+  background-color: #DA0080;
+  color: #fff;
+}
+
+.text-blue {
+  color: #009CDE !important;
+  text-decoration: none !important;
+}
