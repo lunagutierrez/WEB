@@ -1,8 +1,15 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
   width: 100%;
+  height: 100%;
 }
 
+.btn-pink {
+  background-color: #DA0080 !important;
+  color: #fff;
+  border: none;
+}
+
+.text-blue {
+  color: #009CDE !important;
+  text-decoration: none !important;
+}
