@@ -12,7 +12,7 @@ const ProdDisc = () => {
       <p className="mb-4">Échale un vistazo a nuestros productos más populares</p>
       <Card className='border-0'>
         <CardBody className="d-flex justify-content-end me-4">  
-            <Button className="btn-pink p-1 border-0"> Explorar <FontAwesomeIcon icon={faPlus} /> </Button>
+            <Button className="btn-pink py-1 px-2 border-0"> Explorar <FontAwesomeIcon icon={faPlus} /> </Button>
         </CardBody>
       </Card>
     </Col>
