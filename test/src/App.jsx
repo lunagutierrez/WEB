@@ -1,18 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
+import Products from './components/products/Products'
 import Banner from './components/banner/Banner'
 import Services from './components/services/Services'
-import Product from './components/products/product/Product'
-import ProdDisc from './components/products/prod_disc/ProdDisc'
-
-import paint from "./assets/img/card_b.jpg"
-
+import Filter from './components/inputs/filter/Filter'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,14 +15,7 @@ function App() {
     <>
     <Header />
     <Banner />
-    <ProdDisc />
-    <Product
-  image={paint}
-  name="Tarjetas de presentación"
-  price="Desde 3,000 COP c/u"
-  link="cart.html"
-/>
-
+    <Products />
     <Services />
     <Footer />
     

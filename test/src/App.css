@@ -4,8 +4,9 @@
 }
 
 .btn-pink {
-  background-color: #DA0080;
+  background-color: #DA0080 !important;
   color: #fff;
+  border: none;
 }
 
 .text-blue {

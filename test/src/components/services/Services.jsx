@@ -10,7 +10,8 @@ import { Row } from 'reactstrap';
 
 const Services = () => {
   return (
-    <div className="service-list-container">
+    <div className="service-list-container text-center">
+      <h2 className="mb-5 section-title">Nuestros servicios de diseño</h2>
         <Row>
         <Service
             imageUrl={paint}

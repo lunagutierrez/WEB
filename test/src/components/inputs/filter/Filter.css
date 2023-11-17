@@ -1,0 +1,20 @@
+.category-dropdown,
+.ordering-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    padding: 5px;
+    background-color: #DA0080;
+    color: #fff;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+select option {
+    background-color: #fff;
+    color: #1E120E;
+}
