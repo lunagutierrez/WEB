@@ -53,6 +53,7 @@ const Header = ({logged_in = true}) => {
       </Container>
     </Navbar>
   );
+  
 };
 
 export default Header;
