@@ -1,14 +1,14 @@
-import './Banner.css'
+import './Banner.css';
 import SearchBar from '../inputs/searchbar/SearchBar';
 import React from 'react';
-import hero from "../../assets/img/hero.png"
-import { Container, Row, Col, Input, Button, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import hero from '../../assets/img/hero.png';
+import { Container, Row, Col } from 'reactstrap';
 
 const Banner = () => {
   return (
     <div className="hero">
       <Container>
-        <Row className="justify-content-between">
+        <Row className="justify-content-between align-items-center">
           <Col lg="5">
             <div className="intro-excerpt">
               <h1>

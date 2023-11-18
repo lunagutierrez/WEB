@@ -35,7 +35,7 @@ select {
 
 .search-input input {
     padding: 5px;
-    width: 300px; 
+    width: 200px; 
     height: 100%;
     font-size: 18px;
 }
