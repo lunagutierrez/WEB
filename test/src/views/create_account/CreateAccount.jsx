@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './CreateAccount.css'
-import Header from '../../components/header/Header'
-import Footer from '../../components/footer/Footer'
-
+import logo from "../../assets/img/logo.png"
+import splash from "../../assets/img/splash.png"
+import { Container, Row, Col } from 'reactstrap';
+import CreateAccountForm from '../../components/create_account_form/CreateAccountForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CreateAccount() {
@@ -10,8 +11,25 @@ function CreateAccount() {
 
   return (
     <>
-    <Header></Header>
-    <Footer></Footer>
+    <Container>
+      <Row>
+        <div class="caja-logo">
+          <img width="50%" height="auto" src={logo} alt="Logo" />
+        </div>
+      </Row>
+      <Row xs ="1" md ="2">
+        <Col>
+          <div class="splashImg">
+            <img src={splash}/>
+          </div>
+        </Col>
+        <Col>
+          <div class= "caja-formulario">
+            <CreateAccountForm></CreateAccountForm>
+          </div>
+        </Col>
+      </Row>
+    </Container>
     </>
   )
 }
