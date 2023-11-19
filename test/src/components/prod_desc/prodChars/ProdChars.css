@@ -1,14 +1,14 @@
 .charcs {
-    list-style: none;
-  }
-  
+  list-style: none;
+}
+
 .charcs li:before {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    background: url('../../../assets/img/triad.svg') no-repeat left center;
-    background-size: contain;
-  
-    content: '';
-  }
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background: url('../../../assets/img/triad.svg') no-repeat left center;
+  background-size: contain;
+
+  content: '';
+}

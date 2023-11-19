@@ -12,23 +12,13 @@ import ProdImgs from './components/prod_desc/prodImgs/ProdImgs'
 import OptSel from './components/inputs/optSel/OptSel';
 import ProdQ from './components/prod_desc/prodQ/ProdQ';
 import ProdChars from './components/prod_desc/prodChars/ProdChars';
+import Prod_desc from './components/prod_desc/Prod_desc';
+import ProdTabs from './components/prodTabs/ProdTabs';
 
 const paths = [
   { name: 'Inicio', link: '../inicio.html' },
   { name: 'Tienda', link: 'tienda.html' },];
 
-  const mainImageUrl = 'https://staticecp.uprinting.com/6981/700x700/UP_Custom_Stickers_PDP_Promotional_B.jpg';
-const smallImageUrls = [
-    'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
-    'https://staticecp.uprinting.com/5754/700x700/UP_Stickers_and_Labels_Cut_to_Size_Gallery_1_A.jpg',
-    'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
-  ];
-  
-  const options = [
-    { value: 'option1', label: 'Option 1' },
-    { value: 'option2', label: 'Option 2' },
-    { value: 'option3', label: 'Option 3' },
-  ];
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,10 +29,8 @@ function App() {
     <Banner />
     <Crumbs paths={paths} />;
     <Products />
-    <ProdImgs imageLinks={smallImageUrls} />
-    <OptSel label={'Forma'} options = {options}/>
-    <ProdQ/>
-    <ProdChars/>
+    <Prod_desc />
+    <ProdTabs />
     <Services />
     <Footer />
     

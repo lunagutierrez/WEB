@@ -14,7 +14,9 @@ const OptSel = ({label, options}) => {
   return (
     <form>
       <FormGroup>
-        <Label for="exampleSelect">{label}</Label>
+        <Label for="exampleSelect" className="labelSelect">
+          <strong>{label}</strong>
+        </Label>
         <Input
           type="select"
           name="select"

@@ -3,11 +3,15 @@ import './ProdQ.css'
 import { FormGroup } from 'reactstrap';
 import OptSel from '../../inputs/optSel/OptSel';
 
+const cantidadOptions = [{ value: 'A', label: 50 },
+                        { value: 'B', label: 100 },
+                        { value: 'C', label: 250 },
+                        { value: 'D', label: 500 },];
+
 const ProdQ = () => {
-    const cantidadOptions = ['10', '50', '100', '500'];
   
     return (
-      <div className="d-flex justify-content-end me-5 col mb-3 mt-4">
+      <div className="d-flex justify-content-center col mb-3 mt-4">
         <div className="qcosto px-4">
           <FormGroup className="dropdown">
             <OptSel label="Cantidad" options={cantidadOptions} id="Cantidad" />

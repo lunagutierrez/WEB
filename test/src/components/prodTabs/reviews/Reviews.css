@@ -1,0 +1,48 @@
+.rating-container {
+    display: flex;
+    background-color: #fff;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.ov_rating{
+    margin-top: 20px;
+    color: white;
+}
+
+.rating-box {
+    flex: 1;
+    text-align: center;
+    background-color: #009CDE;
+    padding: 20px;
+}
+
+.rating-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stars {
+    color: #ffe400;
+    font-size: 24px;
+}
+
+.rating-box p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.star-counts {
+    flex: 1;
+    padding: 20px;
+}
+
+.star-counts p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.star-yellow {
+    color: #ffe400;
+}
