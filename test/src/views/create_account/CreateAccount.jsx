@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import './CreateAccount.css'
-import logo from "../../assets/img/logo.png"
-import splash from "../../assets/img/splash.png"
+import { useState } from 'react';
+import './CreateAccount.css';
+import logo from "../../assets/img/logo.png";
+import splash from "../../assets/img/splash.png";
 import { Container, Row, Col } from 'reactstrap';
 import CreateAccountForm from '../../components/create_account_form/CreateAccountForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,7 +31,7 @@ function CreateAccount() {
       </Row>
     </Container>
     </>
-  )
-}
+  );
+};
 
 export default CreateAccount
