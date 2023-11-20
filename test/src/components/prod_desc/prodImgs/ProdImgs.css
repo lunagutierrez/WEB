@@ -1,0 +1,17 @@
+.w-80{
+    width: 80%;
+}
+.carousel {
+    max-width: 300px;
+    margin: auto;
+  }
+    .carousel-item img {
+    max-height: 100px; 
+    margin: auto;
+  }
+  
+  .img-thumbnail {
+    max-width: 80px;
+    cursor: pointer;
+  }
+  
