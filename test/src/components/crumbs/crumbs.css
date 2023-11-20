@@ -1,0 +1,18 @@
+.path-bar_pl {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.path-bar_pl span {
+    margin: 0 5px;
+}
+
+.path-bar_pl a {
+    text-decoration: none;
+    color:black;
+}
+
+.path-bar_pl a:hover {
+    text-decoration: underline;
+    color: black;
+}
