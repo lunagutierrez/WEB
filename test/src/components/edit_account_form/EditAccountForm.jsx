@@ -23,7 +23,7 @@ const EditAccountForm = () => {
                             </Row>
                             <Row>
                                 <div class="caja-btn">
-                                <button class = "btn-pink">
+                                <button class = "btn-rosa">
                                     <span class="texto">EDITAR INFORMACIÓN</span>
                                 </button>
                                 </div>

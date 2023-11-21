@@ -14,20 +14,22 @@ function AccountInfo() {
   return (
     <>
     <Header/>
-    <Container>
-      <Row xs ="1" md ="2">
-        <Col>
-          <div class="splashImg">
-            <img src={splash}/>
-          </div>
-        </Col>
-        <Col>
-          <div class= "caja-formulario">
-            <EditAccountForm></EditAccountForm>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+    <div class="bloque-cuenta">
+      <Container>
+        <Row xs ="1" md ="2">
+          <Col className="d-none d-lg-block">
+            <div class="splashImg">
+              <img src={splash}/>
+            </div>
+          </Col>
+          <Col>
+            <div class= "caja-formulario">
+              <EditAccountForm></EditAccountForm>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
     <Footer/>
     </>
   );
