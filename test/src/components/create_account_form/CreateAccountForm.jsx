@@ -33,13 +33,13 @@ const CreateAccountForm = () => {
                             </Row>
                             <Row>
                                 <div class="caja-btn">
-                                <button class = "btn-pink">
+                                <button class = "btn-rosa">
                                     <span class="texto">REGISTRARSE</span>
                                 </button>
                                 </div>
                             </Row>
                             <Row>
-                                <div class="caja/btn">
+                                <div class="caja-btn">
                                     <button class = "btn-social">
                                         <span class="texto">Ingresa con Google <FontAwesomeIcon icon={faGoogle} /></span>
                                     </button>

@@ -6,15 +6,13 @@
 
 .btn-social{
     width: 100%;
-    margin-top: 5px;
     background-color: #fff;
     color: black;
     border-color: #928e8e;
 }
 
-.btn-pink {
-    width: 95%;
-    background-color: #DA0080 !important;
-    color: #fff;
-    border: none;
-  }
+.btn-rosa{
+    width: 100%;
+    background-color: #DA0080;
+    color: white;
+}
