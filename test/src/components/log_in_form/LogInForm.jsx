@@ -14,7 +14,7 @@ const LogInForm = () => {
                 <section>
                     <form name="datosPersonales" action="inicio_login.html" method="">
                         <h1>Login</h1>
-                        <p>¿No tienes una cuenta?<a href="ingresar.html">Crea una ahora</a></p>
+                        <p>¿No tienes una cuenta? <a href="ingresar.html"> Crea una ahora</a></p>
                         <Col>
                             <Row>
                                 <InputBox input_id={"correo"} input_type={"email"} label_text={'Correo electrónico: '}></InputBox>
@@ -24,7 +24,7 @@ const LogInForm = () => {
                             </Row>
                             <Row>
                                 <div class="caja-btn">
-                                <button class = "btn-pink">
+                                <button class = "btn-rosa">
                                     <span class="texto">LOGIN</span>
                                 </button>
                                 </div>

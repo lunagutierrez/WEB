@@ -1,16 +1,17 @@
-.caja-logo img{
-    width: 25%;
-    margin:auto;
-    padding: auto;
-    height:auto;
-  }
-  
-.splashImg img{
-    margin-top: -10%;
-    margin-left: -25%;
-    width: 130%;
-  }
+body {
+  padding-bottom: 50px;
+}
 
-.btn-pink{
-    width: 100%;
+.caja-logo img{
+  width: 100px;
+  margin-left: 0px;
+}
+
+.splashImg img{
+  margin-left: 0%;
+  padding: 0%;
+}
+
+.caja-formulario{
+margin-bottom: auto;
 }

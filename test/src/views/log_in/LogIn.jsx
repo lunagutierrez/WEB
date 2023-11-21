@@ -18,7 +18,7 @@ function LogIn() {
         </div>
       </Row>
       <Row xs ="1" md ="2">
-        <Col>
+        <Col className="d-none d-lg-block">
           <div class="splashImg">
             <img src={splash}/>
           </div>
