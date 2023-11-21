@@ -1,0 +1,25 @@
+.number-input {
+    display: flex;
+    align-items: center;
+  }
+
+  .number-input button {
+    background-color:#009CDE;
+    border: none;
+  }
+  
+  .number {
+    margin: 0 7px;
+    font-family: 'Raleway', sans-serif, monospace;
+  }
+
+  .number-input button:hover {
+    background-color: #2499cb;
+  }
+
+  .number-input button:disabled {
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    color: black;
+  }
+  

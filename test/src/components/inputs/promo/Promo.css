@@ -1,0 +1,14 @@
+.promotion-code-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .promotion-code-input {
+    flex: 1;
+  }
+  
+  .promotion-code-button {
+    margin-top: 5px;
+  }
+  
