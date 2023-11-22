@@ -3,6 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 import InputBox from'../input_box/InputBox'
 
 import { Container, Row, Col } from 'reactstrap';
@@ -12,9 +13,9 @@ const LogInForm = () => {
         <div class="formulario">
             <Container>
                 <section>
-                    <form name="datosPersonales" action="inicio_login.html" method="">
+                    <form name="datosPersonales" method="">
                         <h1>Login</h1>
-                        <p>¿No tienes una cuenta? <a href="ingresar.html"> Crea una ahora</a></p>
+                        <p>¿No tienes una cuenta? <Link to="/forms/create_account"> Crea una ahora</Link></p>
                         <Col>
                             <Row>
                                 <InputBox input_id={"correo"} input_type={"email"} label_text={'Correo electrónico: '}></InputBox>
@@ -24,19 +25,21 @@ const LogInForm = () => {
                             </Row>
                             <Row>
                                 <div class="caja-btn">
-                                <button class = "btn-rosa">
-                                    <span class="texto">LOGIN</span>
-                                </button>
+                                    <Link to="/printlab/landing">
+                                        <button class = "btn-rosa">
+                                            <span class="texto">LOGIN</span>
+                                        </button>
+                                    </Link>
                                 </div>
                             </Row>
                             <Row>
-                                <p><a>¿Olvidaste tu contraseña?</a></p>
+                                <p><Link to="forms/forgotten_password">¿Olvidaste tu contraseña?</Link></p>
                             </Row>
                             <Row>
                                 <div class="caja/btn">
-                                    <button class = "btn-social">
-                                        <span class="texto">Ingresa con Google <FontAwesomeIcon icon={faGoogle} /></span>
-                                    </button>
+                                        <button class = "btn-social">
+                                            <span class="texto">Ingresa con Google <FontAwesomeIcon icon={faGoogle} /></span>
+                                        </button>
                                 </div>
                             </Row>
                             <Row>

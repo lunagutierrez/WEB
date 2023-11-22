@@ -1,6 +1,6 @@
 import './ErrorMessage.css';
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 
 const ErrorMessage = () => {
@@ -15,9 +15,11 @@ const ErrorMessage = () => {
                 </Row>
                 <Row>
                 <div class="caja-btn">
-                    <button class = "btn-pink">
-                        <span class="texto">IR AL INICIO</span>
-                    </button>
+                    <Link to="printlab/landing">
+                        <button class = "btn-pink">
+                            <span class="texto">IR AL INICIO</span>
+                        </button>
+                    </Link>
                 </div>
                 </Row>
             </div>

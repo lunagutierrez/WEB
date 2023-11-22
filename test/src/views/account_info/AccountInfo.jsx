@@ -13,7 +13,6 @@ function AccountInfo() {
 
   return (
     <>
-    <Header/>
     <div class="bloque-cuenta">
       <Container>
         <Row xs ="1" md ="2">
@@ -30,7 +29,6 @@ function AccountInfo() {
         </Row>
       </Container>
     </div>
-    <Footer/>
     </>
   );
 };

@@ -3,7 +3,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import InputBox from'../input_box/InputBox'
+import InputBox from'../input_box/InputBox';
+import { Link } from 'react-router-dom';
 
 import { Container, Row, Col } from 'reactstrap';
 
@@ -12,9 +13,9 @@ const CreateAccountForm = () => {
         <div class="formulario">
             <Container>
                 <section>
-                    <form name="datosPersonales" action="inicio_login.html" method="">
+                    <form name="datosPersonales" method="">
                         <h1>Crea una cuenta</h1>
-                        <p>¿Ya tienes una cuenta? <a href="ingresar.html">Ingresa</a></p>
+                        <p>¿Ya tienes una cuenta? <Link to="/printlab/login">Ingresa</Link></p>
                         <Col>
                             <Row>
                                 <InputBox input_id={"nombre"} input_type={"text"} label_text={'Nombre: '}></InputBox>
@@ -33,9 +34,11 @@ const CreateAccountForm = () => {
                             </Row>
                             <Row>
                                 <div class="caja-btn">
-                                <button class = "btn-rosa">
-                                    <span class="texto">REGISTRARSE</span>
-                                </button>
+                                <Link to="/printlab/landing">
+                                    <button class = "btn-rosa">
+                                        <span class="texto">REGISTRARSE</span>
+                                    </button>
+                                </Link>
                                 </div>
                             </Row>
                             <Row>
