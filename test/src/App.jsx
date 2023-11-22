@@ -3,6 +3,7 @@ import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import CreateAccount from './views/create_account/CreateAccount';
 import LogIn from  './views/log_in/LogIn';
+import AboutUs from './views/about_us/AboutUs';
 import AccountInfo from './views/account_info/AccountInfo';
 import ErrorPage from './views/error_page/ErrorPage';
 import Landing from './views/landing/Landing';
