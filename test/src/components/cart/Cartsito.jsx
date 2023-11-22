@@ -55,7 +55,7 @@ const Cartsito = () => {
                 </AccordionItem>
             </Accordion>
             </Col>
-            <Col>
+            <Col className='me-2'>
                 <Summ products={prods} />
             </Col>
         </Row>
