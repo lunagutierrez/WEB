@@ -26,6 +26,9 @@ import Faq from './components/prodTabs/faq/Faq';
 import ProdBuy from './components/prod_desc/prodBuy/ProdBuy';
 import ProdImg from './components/prod_desc/prodImg/ProdImg';
 import ProdBought from './components/cart/prodBought/ProdBought';
+import Contact from './components/cart/contact/Contact';
+import Delivery from './components/cart/delivery/Delivery';
+import Payment from './components/cart/payment/Payment';
 
 const paths = [
   { name: 'Inicio', link: '../inicio.html' },
@@ -47,9 +50,9 @@ const products = [
 ];
 
 const prods = [
-  { prod: 'Product 1', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: '$10' },
-  { prod: 'Product 2', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: '$20' },
-  { prod: 'Product 3', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: '$30' },
+  { prod: 'Product 1', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 10 },
+  { prod: 'Product 2', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 20 },
+  { prod: 'Product 3', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 30 },
 ];
   
 function App() {
@@ -64,6 +67,9 @@ function App() {
     <Products />
     <Prod_desc />
     <ProdTabs />
+    <Contact />
+    <Delivery />
+    <Payment />
     <Summ products={prods} />
     <Services />
     <Footer />

@@ -5,7 +5,7 @@ import ProdImg from '../../prod_desc/prodImg/ProdImg';
 
 const ProdBought = ({prod, imgUrl, price}) => {
   return (
-    <Row className="prod-container">
+    <Row className="prod-container mb-4">
       <Col md={6}>
         <Row>
             <Col md={3}>
@@ -19,8 +19,7 @@ const ProdBought = ({prod, imgUrl, price}) => {
         </Row>
       </Col>
       <Col md={6} className='py-3'>
-        {price}
-        
+        ${price}
       </Col>
     </Row>
   );
