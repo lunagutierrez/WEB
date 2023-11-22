@@ -1,3 +1,4 @@
+import Cartsito from '../../components/cart/Cartsito';
 import Payment from '../../components/cart/payment/Payment'
 import Summ from '../../components/cart/summ/Summ'
 import Crumbs from '../../components/crumbs/Crumbs'
@@ -17,9 +18,7 @@ const Cart = () => {
     return (
         <>
             <Crumbs paths={paths} />
-            
-            <Payment />
-            <Summ products={prods} />
+            <Cartsito />
         </>   
     )
 }

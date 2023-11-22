@@ -19,7 +19,6 @@ const Contact = () => {
 
   return (
     <Container>
-      <h2>Detalles de contacto</h2>
       <Form>
         <Row>
           <Col md={6}>

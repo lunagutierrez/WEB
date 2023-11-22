@@ -8,12 +8,12 @@ const ProdBought = ({prod, imgUrl, price}) => {
     <Row className="prod-container mb-4">
       <Col md={6}>
         <Row>
-            <Col md={3}>
+            <Col md={4}>
             <ProdImg imgUrl={imgUrl} />
   
             </Col>
             <Col md={6} className='py-2'>
-                <h4>{prod}</h4>
+                <h6>{prod}</h6>
                 <Plusminus />
             </Col>
         </Row>

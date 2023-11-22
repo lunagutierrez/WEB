@@ -19,48 +19,10 @@ const Delivery = () => {
 
   return (
     <Container>
-      <h2>Datos de Envío</h2>
       <Form>
-        <FormGroup>
-          <Label for="address">Dirección</Label>
-          <Input
-            type="text"
-            name="address"
-            id="address"
-            placeholder="Ingrese su dirección"
-            value={Delivery.address}
-            onChange={handleInputChange}
-          />
-        </FormGroup>
-
-        <FormGroup>
-          <Label for="details">Detalle</Label>
-          <Input
-            type="text"
-            name="details"
-            id="details"
-            placeholder="Ingrese detalles adicionales"
-            value={Delivery.details}
-            onChange={handleInputChange}
-          />
-        </FormGroup>
-
-        <Row>
+      <Row>
           <Col md={6}>
-            <FormGroup>
-              <Label for="city">Ciudad</Label>
-              <Input
-                type="text"
-                name="city"
-                id="city"
-                placeholder="Ingrese su ciudad"
-                value={Delivery.city}
-                onChange={handleInputChange}
-              />
-            </FormGroup>
-          </Col>
-          <Col md={6}>
-            <FormGroup>
+          <FormGroup>
               <Label for="department">Departamento</Label>
               <Input
                 type="text"
@@ -72,7 +34,51 @@ const Delivery = () => {
               />
             </FormGroup>
           </Col>
-        </Row>
+          <Col md={6}>
+          <FormGroup>
+              <Label for="city">Ciudad</Label>
+              <Input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Ingrese su ciudad"
+                value={Delivery.city}
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+            
+          </Col>
+      </Row>
+
+      <Row>
+        <Col md={6}>
+          <FormGroup>
+            <Label for="address">Dirección</Label>
+            <Input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Ingrese su dirección"
+              value={Delivery.address}
+              onChange={handleInputChange}
+            />
+          </FormGroup>
+        </Col>
+        <Col md={6}>
+          <FormGroup>
+            <Label for="details">Detalle</Label>
+            <Input
+              type="text"
+              name="details"
+              id="details"
+              placeholder="Ingrese el detalle de su dirección"
+              value={Delivery.details}
+              onChange={handleInputChange}
+            />
+          </FormGroup>
+        </Col>
+      </Row>
+        
       </Form>
     </Container>
   );
