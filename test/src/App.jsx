@@ -29,6 +29,9 @@ import ProdBought from './components/cart/prodBought/ProdBought';
 import Contact from './components/cart/contact/Contact';
 import Delivery from './components/cart/delivery/Delivery';
 import Payment from './components/cart/payment/Payment';
+import Layout from './components/layout/Layout';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Landing from './views/landing/Landing';
 
 const paths = [
   { name: 'Inicio', link: '../inicio.html' },
@@ -54,27 +57,31 @@ const prods = [
   { prod: 'Product 2', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 20 },
   { prod: 'Product 3', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 30 },
 ];
+
+const routes = [
+  {
+    path: '/printlab',
+    element: <Layout/>,
+    children: [
+      {
+        path: 'landing',
+        element: <Landing />,
+      }
+    ],
+  }
+]
   
 function App() {
   const [count, setCount] = useState(0)
 
+  const router = createBrowserRouter(
+    routes
+  )
+
+
   return (
     <>
-    <Header />
-    <Banner />
-    <Crumbs paths={paths} />;
-    <Promo />
-    <Products />
-    <Prod_desc />
-    <ProdTabs />
-    <Contact />
-    <Delivery />
-    <Payment />
-    <Summ products={prods} />
-    <Services />
-    <Footer />
-    
-    
+      <RouterProvider router={router} />
     </>
   )
 }

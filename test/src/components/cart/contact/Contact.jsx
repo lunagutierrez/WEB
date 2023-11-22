@@ -21,7 +21,7 @@ const Contact = () => {
     <Container>
       <h2>Detalles de contacto</h2>
       <Form>
-        <Row form>
+        <Row>
           <Col md={6}>
             <FormGroup>
               <Label for="firstName">Nombre</Label>
@@ -50,7 +50,7 @@ const Contact = () => {
           </Col>
         </Row>
 
-        <Row form>
+        <Row>
           <Col md={6}>
             <FormGroup>
               <Label for="email">Correo</Label>

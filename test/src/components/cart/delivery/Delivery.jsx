@@ -45,7 +45,7 @@ const Delivery = () => {
           />
         </FormGroup>
 
-        <Row form>
+        <Row>
           <Col md={6}>
             <FormGroup>
               <Label for="city">Ciudad</Label>

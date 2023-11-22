@@ -6,8 +6,8 @@ const SearchBar = () => {
   return (
     <div className="search-bar">
       <div className="category-dropdown">
-        <select id="category">
-          <option disabled selected value="">
+        <select id="category" defaultValue="">
+          <option disabled value="">
             Categorías
           </option>
           <option value="all">Todas las categorías</option>

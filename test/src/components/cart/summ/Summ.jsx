@@ -20,8 +20,8 @@ const Summ = ({ products }) => {
       <h2>Resumen de compra</h2>
 
       <div className="prod-list my-2">
-        {products.map((product) => (
-          <ProdBought key={product.id} prod={product.prod} imgUrl={product.imgUrl} price={product.price} />
+        {products.map((product, index) => (
+          <ProdBought key={product.id || index} prod={product.prod} imgUrl={product.imgUrl} price={product.price} />
         ))}
       </div>
 
