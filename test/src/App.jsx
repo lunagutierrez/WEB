@@ -32,6 +32,9 @@ import Payment from './components/cart/payment/Payment';
 import Layout from './components/layout/Layout';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Landing from './views/landing/Landing';
+import Prod from './views/prod/Prod';
+import Cart from './views/cart/Cart';
+import Store from './views/store/Store';
 
 const paths = [
   { name: 'Inicio', link: '../inicio.html' },
@@ -52,20 +55,28 @@ const products = [
   },
 ];
 
-const prods = [
-  { prod: 'Product 1', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 10 },
-  { prod: 'Product 2', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 20 },
-  { prod: 'Product 3', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 30 },
-];
 
 const routes = [
   {
     path: '/printlab',
     element: <Layout/>,
+    errorElement: <h1>Not Found</h1>,
     children: [
       {
         path: 'landing',
         element: <Landing />,
+      },
+      {
+        path: 'cart',
+        element: <Cart />,
+      }, 
+      {
+        path: 'prod',
+        element: <Prod />,
+      }, 
+      {
+        path: 'store',
+        element: <Store />,
       }
     ],
   }

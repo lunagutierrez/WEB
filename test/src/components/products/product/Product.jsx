@@ -7,7 +7,7 @@ import { Col, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button
 
 const Product = ({ image, name, price, onViewMoreClick }) => {
   return (
-    <Col md="3" className='p-4'>
+    <Col md="3" className='p-3'>
         <Card className='border-0'>
         <CardImg top className='rounded w-80' src={image} alt={name} />
         <CardBody>

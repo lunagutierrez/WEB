@@ -4,7 +4,7 @@ import React from 'react';
 const Filter = () => {
   return (
     <div className="category-dropdown">
-        <select id="category">
+        <select className="rounded" id="category">
           <option disabled selected value="">
             Ordenar por
           </option>
