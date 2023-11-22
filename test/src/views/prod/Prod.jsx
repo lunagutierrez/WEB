@@ -5,9 +5,9 @@ import ProdTabs from '../../components/prodTabs/ProdTabs';
 
 
 const paths = [
-    { name: 'Inicio', link: '../../inicio.html' },
-    { name: 'Tienda', link: 'tienda.html' },
-    { name: 'Product', link: 'product.html' }];
+    { name: 'Inicio', link: '/printlab/landing' },
+    { name: 'Tienda', link: '/printlab/store' },
+    { name: 'Product', link: '/printlab/store/prod' }];
   
   const prods = [
     { prod: 'Product 1', imgUrl: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg', price: 10 },

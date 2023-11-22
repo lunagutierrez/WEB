@@ -26,7 +26,7 @@ const Header = ({logged_in = true}) => {
           <Nav className="custom-navbar-nav navbar-nav ms-0 mb-2 mb-md-0 col justify-content-center">
             <NavLink active to={'landing'} className="nav-link">INICIO</NavLink>
             <NavLink to={'store'} className="nav-link">TIENDA</NavLink>
-            <NavLink href="#" className="nav-link">NOSOTROS</NavLink>
+            <NavLink to={'store'} className="nav-link">NOSOTROS</NavLink>
           </Nav>
 
           <ul className="icons d-flex justify-content-end mb-2 mb-md-0 ms-3 justify-self-end">

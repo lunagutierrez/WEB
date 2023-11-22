@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import './Product.css'
 
 import React from 'react';
@@ -14,7 +15,7 @@ const Product = ({ image, name, price, onViewMoreClick }) => {
             <CardTitle>{name}</CardTitle>
             <CardSubtitle>Precio: ${price}</CardSubtitle>
             <CardText></CardText>
-            <Button block color='link' className="text-blue p-0 text-end">Ver más <FontAwesomeIcon icon={faCirclePlus} /></Button>
+            <Button tag={Link} to={'/printlab/store/prod'}  block color='link' className="text-blue p-0 text-end">Ver más <FontAwesomeIcon icon={faCirclePlus} /></Button>
         </CardBody>
         </Card>
     </Col>

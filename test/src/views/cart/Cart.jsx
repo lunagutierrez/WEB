@@ -3,9 +3,8 @@ import Summ from '../../components/cart/summ/Summ'
 import Crumbs from '../../components/crumbs/Crumbs'
 
 const paths = [
-    { name: 'Inicio', link: '../../inicio.html' },
-    { name: 'Tienda', link: 'tienda.html' },
-    { name: 'Product', link: 'product.html' }];
+    { name: 'Inicio', link: '/printlab/landing' },
+    { name: 'Carrito', link: '/printlab/cart' }];
 
 
 const prods = [

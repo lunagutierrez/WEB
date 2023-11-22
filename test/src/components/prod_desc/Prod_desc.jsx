@@ -6,6 +6,7 @@ import ProdImgs from './prodImgs/ProdImgs';
 import ProdChars from './prodChars/ProdChars';
 import ProdQ from './prodQ/ProdQ';
 import ProdBuy from './prodBuy/ProdBuy';
+import { useParams } from 'react-router-dom';
 
 const smallImageUrls = [
     'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
