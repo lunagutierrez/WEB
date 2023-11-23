@@ -13,6 +13,25 @@ const smallImageUrls = [
   'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
 ];
 
+const products = [
+  {
+    id: 1,
+    imagelist: [
+      'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
+      'https://staticecp.uprinting.com/5754/700x700/UP_Stickers_and_Labels_Cut_to_Size_Gallery_1_A.jpg',
+      'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
+    ], cost: 1000,
+  }, 
+  {
+    id: 2,
+    imagelist: [
+      'https://staticecp.uprinting.com/9876/700x700/sticker-clear.webp',
+      'https://staticecp.uprinting.com/309/700x700/Clear-Stickers_1400x1400.jpg',
+      'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
+    ], cost: 2000,
+  }]
+
+
 const optionsForma = [
   { value: 'c', label: 'Círculo' },
   { value: 'r', label: 'Rectángulo' },
@@ -50,11 +69,30 @@ const Prod_desc = ({name, descrip}) => {
   };
 
   const handleUpload = () => {
-    // Perform the upload logic here (send the file to your server, etc.)
     console.log('File uploaded:', selectedFile);
-    // You can reset the form or close the modal after successful upload
     setSelectedFile(null);
     toggleImageModal();
+  };
+
+  const [selectedForma, setSelectedForma] = useState('');
+  const [selectedTamaño, setSelectedTamaño] = useState('');
+  const [selectedMaterial, setSelectedMaterial] = useState('');
+  const [selectedAcabado, setSelectedAcabado] = useState('');
+
+  const handleFormaChange = (selectedValue) => {
+    setSelectedForma(selectedValue);
+  };
+
+  const handleTamañoChange = (selectedValue) => {
+    setSelectedTamaño(selectedValue);
+  };
+
+  const handleMaterialChange = (selectedValue) => {
+    setSelectedMaterial(selectedValue);
+  };
+
+  const handleAcabadoChange = (selectedValue) => {
+    setSelectedAcabado(selectedValue);
   };
 
   const { id } = useParams();
@@ -65,17 +103,17 @@ const Prod_desc = ({name, descrip}) => {
       <Row className="mb-4">
         <Col>
           <div className="text-center p-3 text-white">
-            <ProdImgs imageLinks={smallImageUrls} />
+            <ProdImgs imageLinks={products[id-1].imagelist} />
           </div>
         </Col>
         <Col>
           <div className="p-3">
             <h2>{name}</h2>
             <p>{descrip}</p>
-            <OptSel label="Forma:" options={optionsForma} />
-            <OptSel label="Tamaño:" options={optionsTamaño} />
-            <OptSel label="Material:" options={optionsMaterial} />
-            <OptSel label="Acabado:" options={optionsAcabado} />
+            <OptSel label="Forma:" options={optionsForma} onChange={handleFormaChange} />
+            <OptSel label="Tamaño:" options={optionsTamaño} onChange={handleTamañoChange} />
+            <OptSel label="Material:" options={optionsMaterial} onChange={handleMaterialChange} />
+            <OptSel label="Acabado:" options={optionsAcabado} onChange={handleAcabadoChange} />
           </div>
         </Col>
       </Row>
@@ -88,7 +126,7 @@ const Prod_desc = ({name, descrip}) => {
         </Col>
         <Col>
           <div className="text-dark align-items-center">
-            <ProdQ />
+            <ProdQ costo={products[id-1].cost} />
             <div className="text-center">
               <Button className="btn-pink py-1 px-2 border-0" onClick={toggleImageModal}>
                 Cargar o diseñar
@@ -98,7 +136,6 @@ const Prod_desc = ({name, descrip}) => {
         </Col>
       </Row>
 
-      {/* Modal for uploading an image */}
       <Modal isOpen={showImageModal} toggle={toggleImageModal}>
         <ModalHeader toggle={toggleImageModal}>Cargar o diseñar</ModalHeader>
         <ModalBody>
