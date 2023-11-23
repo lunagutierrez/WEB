@@ -36,7 +36,7 @@ const optionsAcabado = [
   { value: 'shiny', label: 'Brillante' },
 ];
 
-const Prod_desc = () => {
+const Prod_desc = ({name, descrip}) => {
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
 
@@ -59,7 +59,6 @@ const Prod_desc = () => {
 
   return (
     <Container>
-      {/* ... (previous code) ... */}
 
       <Row className="mb-4">
         <Col>
@@ -69,8 +68,8 @@ const Prod_desc = () => {
         </Col>
         <Col>
           <div className="p-3">
-            <h2>Nombre del producto</h2>
-            <p>Descripción del producto</p>
+            <h2>{name}</h2>
+            <p>{descrip}</p>
             <OptSel label="Forma:" options={optionsForma} />
             <OptSel label="Tamaño:" options={optionsTamaño} />
             <OptSel label="Material:" options={optionsMaterial} />

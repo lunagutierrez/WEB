@@ -19,7 +19,7 @@ const Prod = () => {
     return (
         <>
             <Crumbs paths={paths} />
-            <Prod_desc />
+            <Prod_desc name = {'Sticker1'} descrip={'Sticker 1 es un sticker'}/>
             <ProdTabs />
         </>
     )
