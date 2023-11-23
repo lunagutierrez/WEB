@@ -125,14 +125,6 @@ const Payment = () => {
                   </Col>
                 </Row>
 
-                {/* Pay Button */}
-                <Row className="justify-content-center">
-                  <Col xs="auto">
-                    <Button tag={Link} to={'/printlab/store'} className="btn-pink py-1 px-2 border-0 text-align-center" onClick={handleAddCard}>
-                  Pagar
-                    </Button>
-                  </Col>
-                </Row>
               </div>
             </Col>
           </Row>

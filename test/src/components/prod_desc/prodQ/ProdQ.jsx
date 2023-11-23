@@ -8,7 +8,7 @@ const cantidadOptions = [{ value: 'A', label: 50 },
                         { value: 'C', label: 250 },
                         { value: 'D', label: 500 },];
 
-const ProdQ = () => {
+const ProdQ = ({id}) => {
   
     return (
       <div className="d-flex justify-content-center col mb-3 mt-4">

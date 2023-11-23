@@ -57,6 +57,8 @@ const Prod_desc = ({name, descrip}) => {
     toggleImageModal();
   };
 
+  const { id } = useParams();
+
   return (
     <Container>
 

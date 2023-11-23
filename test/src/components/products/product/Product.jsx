@@ -6,7 +6,7 @@ import './Product.css'
 import React from 'react';
 import { Col, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
 
-const Product = ({ image, name, price, onViewMoreClick }) => {
+const Product = ({ image, name, price, redirect ,onViewMoreClick }) => {
   return (
     <Col md="3" className='p-3'>
         <Card className='border-0'>
@@ -15,7 +15,7 @@ const Product = ({ image, name, price, onViewMoreClick }) => {
             <CardTitle>{name}</CardTitle>
             <CardSubtitle>Precio: ${price}</CardSubtitle>
             <CardText></CardText>
-            <Button tag={Link} to={'/printlab/store/prod'}  block color='link' className="text-blue p-0 text-end">Ver más <FontAwesomeIcon icon={faCirclePlus} /></Button>
+            <Button tag={Link} to={redirect}  block color='link' className="text-blue p-0 text-end">Ver más <FontAwesomeIcon icon={faCirclePlus} /></Button>
         </CardBody>
         </Card>
     </Col>

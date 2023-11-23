@@ -3,25 +3,40 @@ import { Row } from 'reactstrap';
 
 import card from '../../../assets/img/card_b.jpg'
 import Product from '../product/Product';
+const products = [
+  {
+    image: card,
+    name: 'Tarjetas de presentación',
+    price: 'Desde 3,000 COP c/u',
+    redirect: '/printlab/store/prod/1'
+  },
+  {
+    image: card,
+    name: 'Tarjetas de presentación',
+    price: 'Desde 3,000 COP c/u',
+    redirect: '/printlab/store/prod/2'
+  },
+  {
+    image: card,
+    name: 'Tarjetas de presentación',
+    price: 'Desde 3,000 COP c/u',
+    redirect: '/printlab/store/prod/3'
+  },
+];	
+
 
 const Prods3 = () => {
   return (
     <Row className='justify-content-evenly'>
-    <Product
-        image={card}
-        name="Tarjetas de presentación"
-        price="Desde 3,000 COP c/u"
-        link="cart.html"        />
-    <Product
-        image={card}
-        name="Tarjetas de presentación"
-        price="Desde 3,000 COP c/u"
-        link="cart.html"        />
-    <Product
-        image={card}
-        name="Tarjetas de presentación"
-        price="Desde 3,000 COP c/u"
-        link="cart.html"        />
+      {products.map((product) => (
+        <Product
+          image={product.image}
+          name={product.name}
+          price={product.price}
+          redirect={product.redirect}
+        />
+      ))
+      }
     </Row>
   );
 };

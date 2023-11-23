@@ -71,7 +71,7 @@ const routes = [
         element: <Cart />,
       }, 
       {
-        path: 'store/prod',
+        path: 'store/prod/:id',
         element: <Prod />,
       }, 
       {
