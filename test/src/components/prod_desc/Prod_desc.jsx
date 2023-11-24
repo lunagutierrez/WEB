@@ -20,7 +20,7 @@ const products = [
       'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
       'https://staticecp.uprinting.com/5754/700x700/UP_Stickers_and_Labels_Cut_to_Size_Gallery_1_A.jpg',
       'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
-    ], cost: 1000,
+    ], cost: 1000, name: 'Sticker 1', descrip: 'Descripción 1',
   }, 
   {
     id: 2,
@@ -28,7 +28,15 @@ const products = [
       'https://staticecp.uprinting.com/9876/700x700/sticker-clear.webp',
       'https://staticecp.uprinting.com/309/700x700/Clear-Stickers_1400x1400.jpg',
       'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
-    ], cost: 2000,
+    ], cost: 2000, name: 'Sticker 2', descrip: 'Descripción 2',
+  },
+  {
+    id: 3,
+    imagelist: [
+      'https://staticecp.uprinting.com/6808/700x700/UP_Sheet_Sticker_PDP_Image_D.jpg',
+      'https://staticecp.uprinting.com/7335/700x700/Custom_Sticker_Sheets_PDP_A2.jpg',
+      'https://staticecp.uprinting.com/5786/600x600/C_Boost_Sticker_Sheet_Overview_Image1.jpg'
+    ], cost: 3000,  name: 'Sticker 3', descrip: 'Descripción 3',
   }]
 
 
@@ -55,7 +63,7 @@ const optionsAcabado = [
   { value: 'shiny', label: 'Brillante' },
 ];
 
-const Prod_desc = ({name, descrip}) => {
+const Prod_desc = () => {
   const [showImageModal, setShowImageModal] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
 
@@ -108,8 +116,8 @@ const Prod_desc = ({name, descrip}) => {
         </Col>
         <Col>
           <div className="p-3">
-            <h2>{name}</h2>
-            <p>{descrip}</p>
+            <h2>{products[id-1].name}</h2>
+            <p> {products[id-1].descrip}</p>
             <OptSel label="Forma:" options={optionsForma} onChange={handleFormaChange} />
             <OptSel label="Tamaño:" options={optionsTamaño} onChange={handleTamañoChange} />
             <OptSel label="Material:" options={optionsMaterial} onChange={handleMaterialChange} />

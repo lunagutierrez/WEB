@@ -1,10 +1,19 @@
 import './Filter.css'
 import React from 'react';
 
-const Filter = () => {
+const Filter = ({ selectedFilter, setSelectedFilter }) => {
+  const handleFilterChange = (e) => {
+    const value = e.target.value;
+    setSelectedFilter(value);
+  };
   return (
     <div className="category-dropdown">
-        <select className="rounded" id="category">
+      <select
+        className="rounded"
+        id="category"
+        value={selectedFilter}
+        onChange={handleFilterChange}
+      >
           <option disabled selected value="">
             Ordenar por
           </option>

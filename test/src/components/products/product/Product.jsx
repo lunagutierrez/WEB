@@ -13,7 +13,7 @@ const Product = ({ image, name, price, redirect ,onViewMoreClick }) => {
         <CardImg top className='rounded w-80' src={image} alt={name} />
         <CardBody>
             <CardTitle>{name}</CardTitle>
-            <CardSubtitle>Precio: ${price}</CardSubtitle>
+            <CardSubtitle>Precio: Desde ${price} COP c/u</CardSubtitle>
             <CardText></CardText>
             <Button tag={Link} to={redirect}  block color='link' className="text-blue p-0 text-end">Ver más <FontAwesomeIcon icon={faCirclePlus} /></Button>
         </CardBody>
