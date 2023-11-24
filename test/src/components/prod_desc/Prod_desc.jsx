@@ -137,7 +137,7 @@ const Prod_desc = () => {
             <ProdQ costo={products[id-1].cost} />
             <div className="text-center">
               <Button className="btn-pink py-1 px-2 border-0" onClick={toggleImageModal}>
-                Cargar o diseñar
+                Cargar archivo
               </Button>
             </div>
           </div>
@@ -145,7 +145,7 @@ const Prod_desc = () => {
       </Row>
 
       <Modal isOpen={showImageModal} toggle={toggleImageModal}>
-        <ModalHeader toggle={toggleImageModal}>Cargar o diseñar</ModalHeader>
+        <ModalHeader toggle={toggleImageModal}>Cargar archivo</ModalHeader>
         <ModalBody>
           {/* Image uploading form */}
           <form>
