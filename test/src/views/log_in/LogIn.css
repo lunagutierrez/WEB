@@ -3,13 +3,16 @@ body {
 }
 
 .caja-logo img{
-  width: 100px;
-  margin-left: 0px;
+  width: 25%;
+  margin:auto;
+  padding: auto;
+  height:auto;
 }
 
 .splashImg img{
-  margin-left: 0%;
-  padding: 0%;
+  margin-top: 0%;
+  margin-left: -20%;
+  width: 100%;
 }
 
 .caja-formulario{
