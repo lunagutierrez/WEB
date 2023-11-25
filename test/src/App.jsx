@@ -8,7 +8,9 @@ import AccountInfo from './views/account_info/AccountInfo';
 import ErrorPage from './views/error_page/ErrorPage';
 import Landing from './views/landing/Landing';
 import Layout from './components/layout/Layout';
+import AdminLayout from './components/admin_components/admin_layout/AdminLayout';
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
+import Users from './views/admin_views/users/Users'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -50,6 +52,16 @@ const routes = [
         path: 'forgotten_password',
         element: <ForgottenPassword/>
       }
+    ],
+  },
+  {
+    path: "/admin",
+    element: <AdminLayout/>,
+    children: [{
+      path: 'users',
+      element: <Users/>
+    }
+
     ],
   }
 ]

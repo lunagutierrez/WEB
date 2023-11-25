@@ -1,0 +1,16 @@
+import { useState } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UserTable from '../../../components/admin_components/user_table/UserTable';
+
+function Users() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <UserTable/>
+    </>
+  );
+};
+
+export default Users;
