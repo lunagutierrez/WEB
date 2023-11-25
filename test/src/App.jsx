@@ -8,6 +8,7 @@ import AccountInfo from './views/account_info/AccountInfo';
 import ErrorPage from './views/error_page/ErrorPage';
 import Landing from './views/landing/Landing';
 import Layout from './components/layout/Layout';
+import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -44,6 +45,10 @@ const routes = [
       {
         path: 'create_account',
         element: <CreateAccount/>
+      },
+      {
+        path: 'forgotten_password',
+        element: <ForgottenPassword/>
       }
     ],
   }

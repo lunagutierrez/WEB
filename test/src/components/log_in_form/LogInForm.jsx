@@ -33,7 +33,7 @@ const LogInForm = () => {
                                 </div>
                             </Row>
                             <Row>
-                                <p><Link to="forms/forgotten_password">¿Olvidaste tu contraseña?</Link></p>
+                                <p><Link to="/forms/forgotten_password">¿Olvidaste tu contraseña?</Link></p>
                             </Row>
                             <Row>
                                 <div class="caja/btn">

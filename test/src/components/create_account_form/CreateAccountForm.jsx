@@ -15,7 +15,7 @@ const CreateAccountForm = () => {
                 <section>
                     <form name="datosPersonales" method="">
                         <h1>Crea una cuenta</h1>
-                        <p>¿Ya tienes una cuenta? <Link to="/printlab/login">Ingresa</Link></p>
+                        <p>¿Ya tienes una cuenta? <Link to="/forms/login">Ingresa</Link></p>
                         <Col>
                             <Row>
                                 <InputBox input_id={"nombre"} input_type={"text"} label_text={'Nombre: '}></InputBox>
