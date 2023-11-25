@@ -1,19 +1,19 @@
 import { useState } from 'react';
-import "./Users.css"
+import "./Orders.css"
 import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import UserTable from '../../../components/admin_components/user_table/UserTable';
+import OrdersTable from '../../../components/admin_components/order_table/OrderTable'
 
-function Users() {
+function Orders() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div class ="tabla-editable">
-        <UserTable/>
+    <div class ="tabla-editable-orders">
+        <OrdersTable/>
     </div>
     </>
   );
 };
 
-export default Users;
+export default Orders;

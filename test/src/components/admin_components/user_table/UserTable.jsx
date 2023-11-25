@@ -41,43 +41,43 @@ function UserTable() {
             <th scope="row">4</th>
             <td>Tatiana</td>
             <td>Cabrera</td>
-            <td>@twitter</td>
+            <td>tatianal.cabrera@urosario.edu.co</td>
             </tr>
             <tr>
             <th scope="row">5</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>Camilo</td>
+            <td>Fernández</td>
+            <td>camfer@hotmail.com</td>
             </tr>
             <tr>
             <th scope="row">6</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>Pablo</td>
+            <td>Picasso</td>
+            <td>pablopintor@museo.com</td>
             </tr>
             <tr>
             <th scope="row">7</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>Fernando</td>
+            <td>Montaño</td>
+            <td>monta.fer@gmail.com</td>
             </tr>
             <tr>
             <th scope="row">8</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>Andrés</td>
+            <td>Aguirre</td>
+            <td>aa_aguila@terra.com</td>
             </tr>
             <tr>
             <th scope="row">9</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>Francesca</td>
+            <td>Benavides</td>
+            <td>fran_ben_89@outlook.com</td>
             </tr>
             <tr>
             <th scope="row">10</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>Carlota</td>
+            <td>Jiménez</td>
+            <td>calra_495037@gmail.com</td>
             </tr>
         </tbody>
     </table>

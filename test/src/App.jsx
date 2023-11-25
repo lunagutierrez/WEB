@@ -10,7 +10,8 @@ import Landing from './views/landing/Landing';
 import Layout from './components/layout/Layout';
 import AdminLayout from './components/admin_components/admin_layout/AdminLayout';
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
-import Users from './views/admin_views/users/Users'
+import Users from './views/admin_views/users/Users';
+import Orders from './views/admin_views/orders/Orders';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -60,6 +61,10 @@ const routes = [
     children: [{
       path: 'users',
       element: <Users/>
+    },
+    {
+      path: 'orders',
+      element: <Orders/>
     }
 
     ],
