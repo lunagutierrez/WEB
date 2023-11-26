@@ -12,6 +12,7 @@ import AdminLayout from './components/admin_components/admin_layout/AdminLayout'
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
 import Users from './views/admin_views/users/Users';
 import Orders from './views/admin_views/orders/Orders';
+import EditProduct from './views/admin_views/edit_product/EditProduct';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -34,7 +35,7 @@ const routes = [
       {
         path: 'about_us',
         element: <AboutUs/>
-      }
+      },
     ],
   },
   {
@@ -65,6 +66,10 @@ const routes = [
     {
       path: 'orders',
       element: <Orders/>
+    },
+    {
+      path: 'edit_product',
+      element: <EditProduct/>
     }
 
     ],

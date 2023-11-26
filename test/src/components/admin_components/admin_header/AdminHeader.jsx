@@ -25,8 +25,8 @@ const AdminHeader = ({logged_in = true}) => {
             <NavLink active href="#" className="nav-link">INICIO</NavLink>
             <NavLink href="#" className="nav-link">TIENDA</NavLink>
             <NavLink href="#" className="nav-link">NOSOTROS</NavLink>
-            <NavLink href="#" className="nav-link">USUARIOS</NavLink>
-            <NavLink href="#" className="nav-link">PEDIDOS</NavLink>
+            <NavLink href="/admin/users" className="nav-link">USUARIOS</NavLink>
+            <NavLink href="/admin/orders" className="nav-link">PEDIDOS</NavLink>
           </Nav>
 
           <ul className="icons d-flex justify-content-end mb-2 mb-md-0 ms-3 justify-self-end">
