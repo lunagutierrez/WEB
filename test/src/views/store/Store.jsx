@@ -15,38 +15,38 @@ const products = [
   {
     image: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
     name: 'Sticker 1',
-    price: 1000,
+    price: 2500,
     redirect: '/printlab/store/prod/1',
   },
   {
     image: 'https://staticecp.uprinting.com/9876/700x700/sticker-clear.webp',
     name: 'Sticker 2',
-    price: 2000,
+    price: 3000,
     redirect: '/printlab/store/prod/2',
   },
   {
     image: 'https://staticecp.uprinting.com/6808/700x700/UP_Sheet_Sticker_PDP_Image_D.jpg',
     name: 'Sticker 3',
-    price: 3000,
+    price: 2000,
     redirect: '/printlab/store/prod/3',
   },
   {
     image: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
     name: 'Sticker 4',
     price: 5000,
-    redirect: '/printlab/store/prod/1',
+    redirect: '/printlab/store/prod/4',
   },
   {
     image: 'https://staticecp.uprinting.com/9876/700x700/sticker-clear.webp',
     name: 'Sticker 5',
     price: 8000,
-    redirect: '/printlab/store/prod/2',
+    redirect: '/printlab/store/prod/5',
   },
   {
     image: 'https://staticecp.uprinting.com/6808/700x700/UP_Sheet_Sticker_PDP_Image_D.jpg',
     name: 'Sticker 6',
     price: 3000,
-    redirect: '/printlab/store/prod/3',
+    redirect: '/printlab/store/prod/6',
   },
 ];
 

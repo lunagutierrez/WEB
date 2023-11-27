@@ -147,7 +147,6 @@ const Prod_desc = () => {
       <Modal isOpen={showImageModal} toggle={toggleImageModal}>
         <ModalHeader toggle={toggleImageModal}>Cargar archivo</ModalHeader>
         <ModalBody>
-          {/* Image uploading form */}
           <form>
             <div className="mb-3">
               <label htmlFor="imageInput" className="form-label">
