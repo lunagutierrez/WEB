@@ -8,10 +8,10 @@ import AccountInfo from './views/account_info/AccountInfo';
 import ErrorPage from './views/error_page/ErrorPage';
 import Landing from './views/landing/Landing';
 import Layout from './components/layout/Layout';
-import AdminLayout from '../../../test/src/components/admin_components/admin_layout/AdminLayout';
-import Users from '../../../test/src/views/admin_views/users/Users';
-import Orders from '../../../test/src/views/admin_views/orders/Orders';
-import EditProduct from '../../../test/src/views/admin_views/edit_product/EditProduct';
+import AdminLayout from '../src/components/admin_components/admin_layout/AdminLayout';
+import Users from '../src/views/admin_views/users/Users';
+import Orders from '../src/views/admin_views/orders/Orders';
+import EditProduct from '../src/views/admin_views/edit_product/EditProduct';
 import Store from './views/store/Store'
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
 import Prod from './views/prod/Prod';
