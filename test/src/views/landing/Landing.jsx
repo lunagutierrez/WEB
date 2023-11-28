@@ -9,6 +9,7 @@ import Promo from '../../components/inputs/promo/Promo';
 import Contact from '../../components/cart/contact/Contact';
 import Delivery from '../../components/cart/delivery/Delivery';
 import Payment from '../../components/cart/payment/Payment';
+import Whyus from '../../components/whyus/Whyus';
 
 const paths = [
     { name: 'Inicio', link: '../../inicio.html' },
@@ -25,6 +26,7 @@ const Landing = () => {
         <>
             <Banner />
             <Products />
+            <Whyus />
             <Services />
         </>
     )
