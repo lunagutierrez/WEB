@@ -33,7 +33,7 @@ const CreateAccountForm = () => {
                                 <InputBox input_id={"conf_contrasena"} input_type={"password"} label_text={'Confirmar Contraseña: '}></InputBox>
                             </Row>
                             <Row>
-                                <div class="caja-btn">
+                                <div class="caja-btn-rosa">
                                 <Link to="/printlab/landing">
                                     <button class = "btn-rosa">
                                         <span class="texto">REGISTRARSE</span>

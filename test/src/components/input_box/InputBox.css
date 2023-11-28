@@ -4,13 +4,13 @@
     margin-top: 20px;
 }
 
-label {
+.form-input label {
     width: 100%;
     margin-right: 0%;
     color: #928e8e;
 }
 
-input {
+.form-input input {
     width: 100%;
     height: 70%;
     margin-top: 2%;

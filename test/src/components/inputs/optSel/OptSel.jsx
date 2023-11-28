@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
-import './OptSel.css'
+import React from 'react';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
+import './OptSel.css';
 
-import { FormGroup, Label, Input } from 'reactstrap';
-
-const OptSel = ({label, options}) => {
-
-  const [selectedOption, setSelectedOption] = useState('');
-
+const OptSel = ({ label, options, value, onChange }) => {
   const handleSelectChange = (e) => {
-    setSelectedOption(e.target.value);
+    onChange(e.target.value);
   };
 
   return (
-    <form>
+    <Form>
       <FormGroup>
         <Label for="exampleSelect" className="labelSelect">
           <strong>{label}</strong>
@@ -21,10 +17,12 @@ const OptSel = ({label, options}) => {
           type="select"
           name="select"
           id="exampleSelect"
-          value={selectedOption}
+          value={value} // Use the value prop here
           onChange={handleSelectChange}
         >
-          <option value="" disabled>Escoge una opción</option>
+          <option value="" disabled>
+            Escoge una opción
+          </option>
           {options.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
@@ -32,7 +30,7 @@ const OptSel = ({label, options}) => {
           ))}
         </Input>
       </FormGroup>
-    </form>
+    </Form>
   );
 };
 

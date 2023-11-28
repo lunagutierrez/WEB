@@ -8,11 +8,14 @@ import AccountInfo from './views/account_info/AccountInfo';
 import ErrorPage from './views/error_page/ErrorPage';
 import Landing from './views/landing/Landing';
 import Layout from './components/layout/Layout';
-import AdminLayout from './components/admin_components/admin_layout/AdminLayout';
+import AdminLayout from '../../../test/src/components/admin_components/admin_layout/AdminLayout';
+import Users from '../../../test/src/views/admin_views/users/Users';
+import Orders from '../../../test/src/views/admin_views/orders/Orders';
+import EditProduct from '../../../test/src/views/admin_views/edit_product/EditProduct';
+import Store from './views/store/Store'
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
-import Users from './views/admin_views/users/Users';
-import Orders from './views/admin_views/orders/Orders';
-import EditProduct from './views/admin_views/edit_product/EditProduct';
+import Prod from './views/prod/Prod';
+import Cart from './views/cart/Cart';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -33,9 +36,25 @@ const routes = [
         element: <AccountInfo/>
       },
       {
+        path: 'cart',
+        element: <Cart />,
+      }, 
+      {
         path: 'about_us',
         element: <AboutUs/>
       },
+      {
+        path: 'store',
+        element: <Store/>
+      },
+      {
+        path: 'store/prod/:id',
+        element: <Prod />,
+      }, 
+      {
+        path: 'account_info',
+        element: <AccountInfo/>
+      }
     ],
   },
   {
@@ -71,7 +90,6 @@ const routes = [
       path: 'edit_product',
       element: <EditProduct/>
     }
-
     ],
   }
 ]

@@ -22,7 +22,7 @@ const EditAccountForm = () => {
                                 <InputBox input_id={"correo"} input_type={"email"} label_text={'Correo Electrónico: '}></InputBox>
                             </Row>
                             <Row>
-                                <div class="caja-btn">
+                                <div class="caja-btn-rosa">
                                 <button class = "btn-rosa">
                                     <span class="texto">EDITAR INFORMACIÓN</span>
                                 </button>

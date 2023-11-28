@@ -1,31 +1,20 @@
 import './Products.css'
 
 import React from 'react';
-import { Row } from 'reactstrap';
-import Product from './product/Product';
+import { Col, Row } from 'reactstrap';
 import ProdDisc from './prod_disc/ProdDisc';
-import card from '../../assets/img/card_b.jpg'
+import Prods3 from './prods3/Prods3';
 
 const Products = () => {
   return (
     <div className="service-list-container">
         <Row>
-        <ProdDisc/>
-        <Product
-            image={card}
-            name="Tarjetas de presentación"
-            price="Desde 3,000 COP c/u"
-            link="cart.html"        />
-        <Product
-            image={card}
-            name="Tarjetas de presentación"
-            price="Desde 3,000 COP c/u"
-            link="cart.html"        />
-        <Product
-            image={card}
-            name="Tarjetas de presentación"
-            price="Desde 3,000 COP c/u"
-            link="cart.html"        />
+          <Col md="3" className='p-3 ms-4'>
+            <ProdDisc/>
+          </Col>
+          <Col className='p-0'>
+            <Prods3/>
+          </Col>
         </Row>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import classnames from 'classnames';
@@ -9,58 +9,71 @@ import Faq from './faq/Faq';
 import Descrip from './descrip/Descrip';
 
 const ProdTabs = () => {
+  const [currentTab, setCurrentTab] = useState(1);
   return (
-    <Router>
       <div>
-        <Nav tabs>
+        <Nav tabs justified className='bg-light'>
           <NavItem>
             <NavLink
-              as={Link}
-              to="/descrip"
-              className={classnames({ active: window.location.pathname === '/descrip' })}
+              onClick={() => {
+                setCurrentTab(1)
+              }}
+              active={currentTab === 1}
+              className='text-dark'
             >
               Descrip
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink
-              as={Link}
-              to="/recs"
-              className={classnames({ active: window.location.pathname === '/recs' })}
+              onClick={() => {
+                setCurrentTab(2)
+              }}
+              active={currentTab === 2}
+              className='text-dark'
             >
               Recs
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink
-              as={Link}
-              to="/reviews"
-              className={classnames({ active: window.location.pathname === '/reviews' })}
+              onClick={() => {
+                setCurrentTab(3)
+              }}
+              active={currentTab === 3}
+              className='text-dark'
             >
               Reviews
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink
-              as={Link}
-              to="/faq"
-              className={classnames({ active: window.location.pathname === '/faq' })}
+              onClick={() => {
+                setCurrentTab(4)
+              }}
+              active={currentTab === 4}
+              className='text-dark'
             >
               FAQ
             </NavLink>
           </NavItem>
         </Nav>
 
-        <TabContent>
-          <Routes>
-            <Route path="/descrip" element={<TabPane><Descrip /></TabPane>} />
-            <Route path="/recs" element={<TabPane><Recs /></TabPane>} />
-            <Route path="/reviews" element={<TabPane><Reviews /></TabPane>} />
-            <Route path="/faq" element={<TabPane><Faq /></TabPane>} />
-          </Routes>
+        <TabContent activeTab={currentTab}>
+          <TabPane tabId={1}>
+            <Descrip />
+          </TabPane>
+          <TabPane tabId={2}>
+            <Recs />
+          </TabPane>
+          <TabPane tabId={3}>
+            <Reviews />
+          </TabPane>
+          <TabPane tabId={4}>
+            <Faq />
+          </TabPane>
         </TabContent>
       </div>
-    </Router>
   );
 };
 

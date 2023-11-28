@@ -1,0 +1,20 @@
+
+.summary-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    margin-right: 220px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .total {
+    font-weight: bold;
+  }
+  
+
+  

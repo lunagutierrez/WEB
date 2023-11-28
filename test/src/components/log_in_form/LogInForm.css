@@ -1,6 +1,13 @@
+.caja-btn-rosa{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 .btn-rosa{
     width: 100%;
     background-color: #DA0080;
-    color: white;
-    margin-bottom: 1em;
+    color: #fff;
+    border: none;
 }
+

@@ -4,25 +4,49 @@ import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 
+const StarRow = ({ starCount, total = "0" }) => {
+  const stars = [];
+  for (let i = 0; i < 5; i++) {
+    if (i < starCount) {
+      stars.push(<FontAwesomeIcon key={i} icon={faStar} className="star-yellow" />);
+    } else {
+      stars.push(<FontAwesomeIcon key={i} icon={faStar} className="text-light" />);
+    }
+  }
+
+  return (
+    <div className='d-flex py-1 mx-3'>
+      {stars}
+      <div className='ms-4'>({total})</div>
+    </div>
+  );
+};
+
 const Reviews = () => {
   return (
     <div id="reviews" className="section">
       <h2>Reseñas</h2>
-
-      <div className="rating-container">
-        <div className="rating-box">
-          <h2 className="ov_rating">Puntaje promedio</h2>
-          <h1 className="ov_rating">4.2</h1>
-        </div>
-
-        <div className="star-counts">
-          <p><FontAwesomeIcon icon={faStar} className="star-yellow" /> 5 estrellas: 99</p>
-          <p><FontAwesomeIcon icon={faStar} className="star-yellow" /> 4 estrellas: 45</p>
-          <p><FontAwesomeIcon icon={faStar} className="star-yellow" /> 3 estrellas: 18</p>
-          <p><FontAwesomeIcon icon={faStar} className="star-yellow" /> 2 estrellas: 7</p>
-          <p><FontAwesomeIcon icon={faStar} className="star-yellow" /> 1 estrella: 3</p>
-        </div>
-      </div>
+      <Row className='justify-content-center'>
+        <Col md="3">
+          <div className="d-flex bg-white">
+            <div className='d-flex flex-column'>
+              <div className="rating-box d-flex align-items-center justify-content-center">
+                <h1 className="ov_rating m-0">4.2</h1>
+              </div>
+              <div className='bg-secondary text-white text-center py-2'>
+                de 5.0
+              </div>
+            </div>
+            <div className='d-flex flex-column justify-content-center align-items-start py-2'>
+              <StarRow starCount={5} total='100k' />
+              <StarRow starCount={4} />
+              <StarRow starCount={3} />
+              <StarRow starCount={2} />
+              <StarRow starCount={1} />
+            </div>
+          </div>
+        </Col>
+      </Row>
 
       <section style={{ color: '#000', backgroundColor: '#f3f2f2' }}>
         <Container className="py-5">

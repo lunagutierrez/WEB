@@ -24,7 +24,7 @@ const LogInForm = () => {
                                 <InputBox input_id={"contrasena"} input_type={"password"} label_text={'Contraseña: '}></InputBox>
                             </Row>
                             <Row>
-                                <div class="caja-btn">
+                                <div class="caja-btn-rosa">
                                     <Link to="/printlab/landing">
                                         <button class = "btn-rosa">
                                             <span class="texto">LOGIN</span>
@@ -36,7 +36,7 @@ const LogInForm = () => {
                                 <p><Link to="/forms/forgotten_password">¿Olvidaste tu contraseña?</Link></p>
                             </Row>
                             <Row>
-                                <div class="caja/btn">
+                                <div class="caja-btn">
                                         <button class = "btn-social">
                                             <span class="texto">Ingresa con Google <FontAwesomeIcon icon={faGoogle} /></span>
                                         </button>

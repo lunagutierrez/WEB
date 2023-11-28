@@ -1,0 +1,9 @@
+.btn-card {
+    background-color: #f8f9fa; 
+  }
+  
+  .btn-card.active {
+    border: 2px solid #007bff; 
+    background-color: #ffffff; 
+  }
+  

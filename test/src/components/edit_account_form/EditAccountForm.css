@@ -1,20 +1,12 @@
-.caja-btn{
+.caja-btn-rosa{
     width: 100%;
-    margin-top: 5px;
-    padding-top: 10px;
-}
-
-.btn-social{
-    width: 100%;
-    margin-top: 5px;
-    background-color: #fff;
-    color: black;
-    border-color: #928e8e;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .btn-rosa{
     width: 100%;
     background-color: #DA0080;
-    color: white;
-    margin-bottom: 1em;
+    color: #fff;
+    border: none;
 }

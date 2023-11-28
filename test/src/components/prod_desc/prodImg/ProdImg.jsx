@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container} from 'reactstrap';
 
 const ProdImg = ({imgUrl}) => {
   return (
@@ -8,7 +8,7 @@ const ProdImg = ({imgUrl}) => {
             id="main-product-image"
             src={imgUrl}
             alt="Product Main Image"
-            className="img-fluid"
+            className="img-fluid rounded"
           />
     </Container>
   );

@@ -14,9 +14,9 @@ const ErrorMessage = () => {
                 <p>Ups! Parece que esta página no existe o ha sido eliminada. Revisa de nuevo más tarde o usa nuestra caja de búsqueda en la pagina principal.</p>
                 </Row>
                 <Row>
-                <div class="caja-btn">
+                <div class="caja-btn-rosa">
                     <Link to="printlab/landing">
-                        <button class = "btn-pink">
+                        <button class = "btn-rosa">
                             <span class="texto">IR AL INICIO</span>
                         </button>
                     </Link>

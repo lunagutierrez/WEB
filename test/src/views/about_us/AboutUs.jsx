@@ -27,39 +27,15 @@ function AboutUs() {
               <p>Nuestro equipo de expertos está formado por profesionales con años de experiencia en la impresión. Nos esforzamos por ofrecer a nuestros clientes los mejores productos y servicios posibles, y nos comprometemos a superar sus expectativas.</p>
               <p>Ofrecemos una amplia gama de productos de impresión, incluyendo:</p>
               </Row>
-              <Row md="4">
-              <Col>
-              <div class="card">
-                <img class="card-img-top" src={postal}/>
-                <div class="card-body">
-                  <p class="card-text">Postales</p>
-                </div>
-              </div>
-              </Col>
-              <Col>
-              <div class="card">
-                <img class="card-img-top" src={volante}/>
-                <div class="card-body">
-                  <p class="card-text">Volantes</p>
-                </div>
-              </div>
-              </Col>
-              <Col>
-              <div class="card">
-                <img class="card-img-top" src={folleto}/>
-                <div class="card-body">
-                  <p class="card-text">Folletos</p>
-                </div>
-              </div>
-              </Col>
-              <Col>
-              <div class="card">
-                <img class="card-img-top" src={oficina}/>
-                <div class="card-body">
-                  <p class="card-text">Material de Oficina</p>
-                </div>
-              </div>
-              </Col>
+              <Row>
+                <Col>
+                  <ul>
+                    <li>Folletos </li>
+                    <li>Volantes</li>
+                    <li>Material de Oficina</li>
+                    <li>Postales</li>
+                  </ul>
+                </Col>
               </Row>
               <Row>
               <div class="descrip_about_2">

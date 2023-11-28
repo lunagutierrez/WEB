@@ -17,7 +17,7 @@ const ForgottenPasswordForm = () => {
                                 <InputBox input_id={"correo"} input_type={"text"} label_text={'Correo electrónico registrado: '}></InputBox>
                             </Row>
                             <Row>
-                                <div class="caja-btn">
+                                <div class="caja-btn-rosa">
                                 <Link to="/printlab/landing">
                                     <button class = "btn-rosa">
                                         <span class="texto">RECUPERAR CONTRASEÑA</span>
