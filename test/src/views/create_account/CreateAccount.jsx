@@ -7,6 +7,7 @@ import CreateAccountForm from '../../components/create_account_form/CreateAccoun
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CreateAccount() {
+  
   const [count, setCount] = useState(0)
 
   return (
