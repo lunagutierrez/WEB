@@ -1,4 +1,3 @@
-import Products from '../../components/products/Products'
 import Crumbs from '../../components/crumbs/Crumbs'
 import Prod_desc from '../../components/prod_desc/Prod_desc';
 import ProdTabs from '../../components/prodTabs/ProdTabs';
