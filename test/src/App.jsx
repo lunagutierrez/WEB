@@ -22,6 +22,7 @@ import Cart from './views/cart/Cart';
 import AboutUsAdmin from './views/admin_views/about_us_admin/AboutUsAdmin';
 import Admin_landing from './views/admin_views/admin_landing/AdminLanding';
 import StoreAdmin from './views/admin_views/store_admin/StoreAdmin';
+import AdminForm from './components/admin_form/AdminForm';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -78,6 +79,10 @@ const routes = [
       {
         path: 'forgotten_password',
         element: <ForgottenPassword/>
+      },
+      {
+        path: 'admin_form',
+        element: <AdminForm/>
       }
     ],
   },
