@@ -8,7 +8,7 @@ function DescriptionBox() {
   
     return (
       <>
-        <input className="caja-1" type="text" placeholder='Descripción del Producto'></input>
+        <input class="caja-1" type="text" placeholder='Descripción del Producto'></input>
       </>
     );
   };

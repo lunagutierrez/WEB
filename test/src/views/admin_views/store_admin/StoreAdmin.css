@@ -1,0 +1,17 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+  }
+  
+  .product-container > * {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage and margin as needed */
+    margin-bottom: 20px;
+  }
+  
+  .caja-agregar-producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -11,33 +11,33 @@ function SizeSelector() {
      <Container>
         <Row>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Miniatura
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Pequeño
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Estándar (A4)
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Grande
                     </label>
                 </div>

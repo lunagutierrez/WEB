@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ProdBuy = () => {
   const [modal, setModal] = useState(false);
+  const navigate = useNavigate();
 
   const toggle = () => setModal(!modal);
 
   const addToCart = () => {
-    window.location.href = '/printlab/cart';
+    navigate('/printlab/cart');
   };
 
   const continueShopping = () => {
-    window.location.href = '/printlab/store';
+    navigate('/printlab/store');
   };
 
   return (

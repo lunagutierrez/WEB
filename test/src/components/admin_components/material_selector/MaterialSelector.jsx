@@ -11,25 +11,25 @@ function MaterialSelector() {
     <Container>
         <Row>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel Offset
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel Estucado
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel Bond
                     </label>
                 </div>
@@ -37,25 +37,25 @@ function MaterialSelector() {
       </Row>
       <Row>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel fotográfico
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel de embalaje
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel regalo
                     </label>
                 </div>
@@ -63,25 +63,25 @@ function MaterialSelector() {
       </Row>
       <Row>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Cartulina Opalina
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel pergamino
                     </label>
                 </div>
             </Col>
             <Col>
-            <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                <label className="form-check-label" for="flexCheckDefault">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
                     Cartulina satinada
                 </label>
             </div>
@@ -89,28 +89,28 @@ function MaterialSelector() {
       </Row>
       <Row>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Cartulina texturizada
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                         Papel Kraft
                     </label>
                 </div>
             </Col>
             <Col>
-                <div className="form-check">
-                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label className="form-check-label" for="flexCheckDefault">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label class="form-check-label" for="flexCheckDefault">
                     Otro ¿Cuál? 
                     </label>
-                    <input className="text"></input>
+                    <input class="text"></input>
                 </div>
             </Col>
       </Row>

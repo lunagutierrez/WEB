@@ -16,9 +16,18 @@ import Store from './views/store/Store'
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
 import Prod from './views/prod/Prod';
 import Cart from './views/cart/Cart';
+import AboutUsAdmin from './views/admin_views/about_us_admin/AboutUsAdmin';
+import StoreAdmin from './views/admin_views/store_admin/StoreAdmin';
+import EditProduct1 from './views/admin_views/edit_product/edit_product_1/EditProduct1';
+import EditProduct2 from './views/admin_views/edit_product/edit_product_2/EditProduct2';
+import EditProduct3 from './views/admin_views/edit_product/edit_product_3/EditProduct3';
+import NewProduct from './views/admin_views/new_product/NewProduct';
+import Admin_landing from './views/admin_views/admin_landing/AdminLanding';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AuthContext } from './context/auth';
+import AdminForm from './components/admin_form/AdminForm';
 
 const routes = [
   {
@@ -73,13 +82,22 @@ const routes = [
       {
         path: 'forgotten_password',
         element: <ForgottenPassword/>
+      }, 
+      {
+        path: 'admin_form',
+        element: <AdminForm/>
       }
     ],
   },
   {
     path: "/admin",
     element: <AdminLayout/>,
-    children: [{
+    children: [
+    {
+      path: 'admin_landing',
+      element: <Admin_landing/>
+    },
+    {
       path: 'users',
       element: <Users/>
     },
@@ -88,11 +106,31 @@ const routes = [
       element: <Orders/>
     },
     {
-      path: 'edit_product',
-      element: <EditProduct/>
-    }
-    ],
-  }
+      path: 'about_us_admin',
+      element: <AboutUsAdmin/>
+    },
+    {
+      path: 'store_admin',
+      element: <StoreAdmin/>
+    },
+    {
+      path: 'edit_product1',
+      element: <EditProduct1/>
+    },
+    {
+      path: 'edit_product2',
+      element: <EditProduct2/>
+    },
+    {
+      path: 'edit_product3',
+      element: <EditProduct3/>
+    },
+    {
+      path: 'add_product',
+      element: <NewProduct/>
+    },
+  ],
+}
 ]
   
 function App() {

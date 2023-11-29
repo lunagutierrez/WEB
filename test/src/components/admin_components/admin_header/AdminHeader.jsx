@@ -22,32 +22,15 @@ const AdminHeader = ({logged_in = true}) => {
 
         <Collapse navbar id="navbarSupportedContent">
           <Nav className="custom-navbar-nav navbar-nav ms-0 mb-2 mb-md-0 col justify-content-center">
-            <NavLink active href="#" className="nav-link">INICIO</NavLink>
-            <NavLink href="#" className="nav-link">TIENDA</NavLink>
-            <NavLink href="#" className="nav-link">NOSOTROS</NavLink>
+            <NavLink href="/admin/store_admin" className="nav-link">TIENDA</NavLink>
             <NavLink href="/admin/users" className="nav-link">USUARIOS</NavLink>
             <NavLink href="/admin/orders" className="nav-link">PEDIDOS</NavLink>
           </Nav>
 
           <ul className="icons d-flex justify-content-end mb-2 mb-md-0 ms-3 justify-self-end">
             <li>
-              <NavLink href="#">
-                <img className="img-fluid" src={cart} alt="Carrito" />
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href={logged_in?"views/inicio_boot.html":"views/ingresar.html"}>
-                <img className="img-fluid" src={persona} alt="Usuario" />
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href="#">
-                <img className="img-fluid" src={logged_in?exit_l:vert_l} alt="Linea" />
-              </NavLink>
-            </li>
-            <li>
-              <NavLink href="#">
-                <img className="img-fluid" src={menu_l} alt="Menú" />
+              <NavLink href="\printlab\landing">
+                <img className="img-fluid" src={exit_l} alt="Linea" />
               </NavLink>
             </li>
           </ul>

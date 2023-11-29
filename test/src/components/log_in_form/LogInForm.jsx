@@ -38,6 +38,9 @@ const LogInForm = () => {
                                 <p><Link to="/forms/forgotten_password">¿Olvidaste tu contraseña?</Link></p>
                             </Row>
                             <Row>
+                                <p><Link to="/forms/admin_form">Ingresa como administrador</Link></p>
+                            </Row>
+                            <Row>
                                 <div className="caja-btn">
                                         <button className = "btn-social">
                                             <span className="texto">Ingresa con Google <FontAwesomeIcon icon={faGoogle} /></span>
