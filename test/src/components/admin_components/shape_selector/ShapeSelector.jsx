@@ -11,33 +11,33 @@ function ShapeSelector() {
      <Container>
         <Row>
             <Col>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label className="form-check-label" for="flexCheckDefault">
                         Circulo
                     </label>
                 </div>
             </Col>
             <Col>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label className="form-check-label" for="flexCheckDefault">
                         Cuadrado
                     </label>
                 </div>
             </Col>
             <Col>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label className="form-check-label" for="flexCheckDefault">
                         Rectángulo
                     </label>
                 </div>
             </Col>
             <Col>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                    <label class="form-check-label" for="flexCheckDefault">
+                <div className="form-check">
+                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                    <label className="form-check-label" for="flexCheckDefault">
                         Óvalo
                     </label>
                 </div>

@@ -13,16 +13,16 @@ function AccountInfo() {
 
   return (
     <>
-    <div class="bloque-cuenta">
+    <div className="bloque-cuenta">
       <Container>
         <Row xs ="1" md ="2">
           <Col className="d-none d-lg-block">
-            <div class="splashImg">
+            <div className="splashImg">
               <img src={splash}/>
             </div>
           </Col>
           <Col>
-            <div class= "caja-formulario">
+            <div className= "caja-formulario">
               <EditAccountForm></EditAccountForm>
             </div>
           </Col>

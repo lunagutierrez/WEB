@@ -10,7 +10,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const CreateAccountForm = () => {
     return (
-        <div class="formulario">
+        <div className="formulario">
             <Container>
                 <section>
                     <form name="datosPersonales" method="">
@@ -33,25 +33,25 @@ const CreateAccountForm = () => {
                                 <InputBox input_id={"conf_contrasena"} input_type={"password"} label_text={'Confirmar Contraseña: '}></InputBox>
                             </Row>
                             <Row>
-                                <div class="caja-btn-rosa">
+                                <div className="caja-btn-rosa">
                                 <Link to="/printlab/landing">
-                                    <button class = "btn-rosa">
-                                        <span class="texto">REGISTRARSE</span>
+                                    <button className = "btn-rosa">
+                                        <span className="texto">REGISTRARSE</span>
                                     </button>
                                 </Link>
                                 </div>
                             </Row>
                             <Row>
-                                <div class="caja-btn">
-                                    <button class = "btn-social">
-                                        <span class="texto">Ingresa con Google <FontAwesomeIcon icon={faGoogle} /></span>
+                                <div className="caja-btn">
+                                    <button className = "btn-social">
+                                        <span className="texto">Ingresa con Google <FontAwesomeIcon icon={faGoogle} /></span>
                                     </button>
                                 </div>
                             </Row>
                             <Row>
-                                <div class="caja-btn">
-                                    <button class = "btn-social">
-                                        <span class="texto">Ingresa con Facebook <FontAwesomeIcon icon={faFacebook}/></span>
+                                <div className="caja-btn">
+                                    <button className = "btn-social">
+                                        <span className="texto">Ingresa con Facebook <FontAwesomeIcon icon={faFacebook}/></span>
                                     </button>
                                 </div>
                             </Row>

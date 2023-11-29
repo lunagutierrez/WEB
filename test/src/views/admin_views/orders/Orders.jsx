@@ -9,7 +9,7 @@ function Orders() {
 
   return (
     <>
-    <div class ="tabla-editable-orders">
+    <div className ="tabla-editable-orders">
         <OrdersTable/>
     </div>
     </>

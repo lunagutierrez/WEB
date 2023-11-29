@@ -9,7 +9,7 @@ function Users() {
 
   return (
     <>
-    <div class ="tabla-editable">
+    <div className ="tabla-editable">
         <UserTable/>
     </div>
     </>

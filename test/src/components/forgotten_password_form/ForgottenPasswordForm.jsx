@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const ForgottenPasswordForm = () => {
     return (
-        <div class="formulario">
+        <div className="formulario">
             <Container>
                 <section>
                     <form name="datosPersonales" method="">
@@ -17,10 +17,10 @@ const ForgottenPasswordForm = () => {
                                 <InputBox input_id={"correo"} input_type={"text"} label_text={'Correo electrónico registrado: '}></InputBox>
                             </Row>
                             <Row>
-                                <div class="caja-btn-rosa">
+                                <div className="caja-btn-rosa">
                                 <Link to="/printlab/landing">
-                                    <button class = "btn-rosa">
-                                        <span class="texto">RECUPERAR CONTRASEÑA</span>
+                                    <button className = "btn-rosa">
+                                        <span className="texto">RECUPERAR CONTRASEÑA</span>
                                     </button>
                                 </Link>
                                 </div>

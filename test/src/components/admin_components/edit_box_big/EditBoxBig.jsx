@@ -8,7 +8,7 @@ function EditBoxBig() {
   
     return (
       <>
-        <input class="caja-2" type="text" placeholder='Nombre del Producto'></input>
+        <input className="caja-2" type="text" placeholder='Nombre del Producto'></input>
       </>
     );
   };

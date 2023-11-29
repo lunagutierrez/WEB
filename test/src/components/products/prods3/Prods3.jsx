@@ -28,8 +28,9 @@ const products = [
 const Prods3 = () => {
   return (
     <Row className='justify-content-evenly'>
-      {products.map((product) => (
+      {products.map((product, index) => (
         <Product
+          key={index}
           image={product.image}
           name={product.name}
           price={product.price}

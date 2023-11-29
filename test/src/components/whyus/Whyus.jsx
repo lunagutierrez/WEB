@@ -18,7 +18,7 @@ const WhyUs = () => {
             <Col className="text-center">
             <img src="https://staticecp.uprinting.com/215/530x530/Notepads_Personal_A.jpg" alt="Image 2" style={{ width: '100%', marginBottom: '10px' }} />
             <p>Impresión de calidad</p>
-            <Button tag={Link} to={'/printlab/store'} className="btn-pink py-1 px-2 border-0"> Explora <FontAwesomeIcon icon={faPlus} /></Button>
+            <Button tag={Link} to={'/printlab/about_us'} className="btn-pink py-1 px-2 border-0"> Explora <FontAwesomeIcon icon={faPlus} /></Button>
             </Col>
             <Col className="text-center">
             <img src="https://staticecp.uprinting.com/3447/700x700/Candle_Boxes_Spas_Marketing_Materials_Category_Page_B.jpg" alt="Image 3" style={{ width: '100%', marginBottom: '10px' }} />

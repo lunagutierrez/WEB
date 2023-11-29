@@ -5,6 +5,7 @@ import splash from "../../assets/img/splash.png";
 import { Container, Row, Col } from 'reactstrap';
 import ErrorMessage from "../../components/error_message/ErrorMessage";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from 'react-router-dom'; 
 
 function ErrorPage() {
   const [count, setCount] = useState(0)
@@ -13,18 +14,18 @@ function ErrorPage() {
     <>
     <Container>
       <Row>
-        <div class="caja-logo">
-          <img width="50%" height="auto" src={logo} alt="Logo" />
-        </div>
+        <NavLink to={'/printlab/landing'} className="navbar-brand ms-2">
+            <img width="17%" height="auto" src={logo} alt="Logo" />
+        </NavLink>
       </Row>
       <Row xs ="1" md ="2">
         <Col>
-          <div class="splashImg">
+          <div className="splashImg">
             <img src={splash}/>
           </div>
         </Col>
         <Col>
-          <div class= "caja-formulario">
+          <div className= "caja-formulario">
             <ErrorMessage></ErrorMessage>
           </div>
         </Col>

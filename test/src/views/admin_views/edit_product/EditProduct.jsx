@@ -51,9 +51,9 @@ const Prod_desc = () => {
         <Col>
           <div className="text-center p-3 text-white">
           <ProdImgs imageLinks={smallImageUrls} />
-          <div class="caja-btn">
-            <button class = "btn-rosa">
-              <span class="texto">AGREGAR/EDITAR IMAGENES</span>
+          <div className="caja-btn">
+            <button className = "btn-rosa">
+              <span className="texto">AGREGAR/EDITAR IMAGENES</span>
             </button>
           </div>
           </div>
@@ -82,9 +82,9 @@ const Prod_desc = () => {
           </div>
         </Col>
       </Row>
-      <div class="caja-btn">
-          <button class = "btn-rosa">
-            <span class="texto">GUARDAR</span>
+      <div className="caja-btn">
+          <button className = "btn-rosa">
+            <span className="texto">GUARDAR</span>
           </button>
       </div>
     </Container>

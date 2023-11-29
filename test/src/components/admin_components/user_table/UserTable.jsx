@@ -7,8 +7,8 @@ function UserTable() {
 
   return (
     <>
-    <div class="table-responsive">
-    <table class="table">
+    <div className="table-responsive">
+    <table className="table">
     <caption>Lista de usuarios</caption>
         <thead>
             <tr>

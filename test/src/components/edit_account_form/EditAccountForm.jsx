@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 const EditAccountForm = () => {
     return (
-        <div class="formulario">
+        <div className="formulario">
             <Container>
                 <section>
                     <form name="datosPersonales" action="inicio_login.html" method="">
@@ -22,9 +22,9 @@ const EditAccountForm = () => {
                                 <InputBox input_id={"correo"} input_type={"email"} label_text={'Correo Electrónico: '}></InputBox>
                             </Row>
                             <Row>
-                                <div class="caja-btn-rosa">
-                                <button class = "btn-rosa">
-                                    <span class="texto">EDITAR INFORMACIÓN</span>
+                                <div className="caja-btn-rosa">
+                                <button className = "btn-rosa">
+                                    <span className="texto">EDITAR INFORMACIÓN</span>
                                 </button>
                                 </div>
                             </Row>

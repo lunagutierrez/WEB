@@ -18,6 +18,7 @@ import Prod from './views/prod/Prod';
 import Cart from './views/cart/Cart';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { AuthContext } from './context/auth';
 
 const routes = [
   {
@@ -95,7 +96,8 @@ const routes = [
 ]
   
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const [logged_in, setLogged_in] = useState(false)
 
   const router = createBrowserRouter(
     routes
@@ -103,9 +105,9 @@ function App() {
 
 
   return (
-    <>
+    <AuthContext.Provider value={{logged_in, set_auth: setLogged_in}}>
       <RouterProvider router={router} />
-    </>
+    </AuthContext.Provider>
   );
 };
 
