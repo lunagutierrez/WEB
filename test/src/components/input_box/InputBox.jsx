@@ -7,7 +7,11 @@ const InputBox = ({input_id,input_type,label_text}) => {
                     <div className='label-input'>
                         <label for ={input_id}>{label_text}</label>
                     </div>
-                    <input id={input_id} type={input_type} name={input_id}/>
+                    <input 
+                    id={input_id} 
+                    type={input_type} 
+                    name={input_id} 
+                    />
                 </div>
     );
   };
