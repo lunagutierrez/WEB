@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { useState } from 'react';
+import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MaterialSelector from '../../../components/admin_components/material_selector/MaterialSelector';
 import ShapeSelector from '../../../components/admin_components/shape_selector/ShapeSelector';
@@ -10,24 +11,44 @@ import DescriptionBox from '../../../components/admin_components/description_box
 import ProdImgs from '../../../components/prod_desc/prodImgs/ProdImgs';
 import ProdCharsAdmin from '../../../components/admin_components/prod_chars_admin/ProdCharsAdmin';
 import ProdQAdmin from '../../../components/admin_components/prod_q_admin/ProdQAdmin';
+import { Link } from 'react-router-dom';
 
 const smallImageUrls = [
-    'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
-    'https://staticecp.uprinting.com/5754/700x700/UP_Stickers_and_Labels_Cut_to_Size_Gallery_1_A.jpg',
-    'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
+    'https://png.pngtree.com/png-clipart/20190921/original/pngtree-file-upload-icon-png-image_4717174.jpg',
+    'https://png.pngtree.com/png-clipart/20190921/original/pngtree-file-upload-icon-png-image_4717174.jpg',
+    'https://png.pngtree.com/png-clipart/20190921/original/pngtree-file-upload-icon-png-image_4717174.jpg'
   ];
 
 const NewProduct = () => {
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const toggleImageModal = () => {
+    setShowImageModal(!showImageModal);
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file);
+  };
+
+  const handleUpload = () => {
+    console.log('File uploaded:', selectedFile);
+    setSelectedFile(null);
+    toggleImageModal();
+  };
   return (
     <Container>
       <Row className="mb-4">
-        <Col>
+      <Col>
           <div className="text-center p-3 text-white">
           <ProdImgs imageLinks={smallImageUrls} />
-          <div class="caja-btn">
-            <button class = "btn-rosa">
-              <span class="texto">AGREGAR IMAGENES</span>
-            </button>
+          <div class="caja-btn-carga">
+            <div className="text-center">
+              <Button className="btn-pink py-1 px-2 border-0" onClick={toggleImageModal}>
+                Cargar archivo
+              </Button>
+            </div>
           </div>
           </div>
         </Col>
@@ -56,10 +77,38 @@ const NewProduct = () => {
         </Col>
       </Row>
       <div class="caja-btn">
-          <button class = "btn-rosa">
-            <span class="texto">GUARDAR</span>
-          </button>
+          <Link to="/admin/store_admin">
+            <button class = "btn-rosa">
+              <span class="texto">GUARDAR</span>
+            </button>
+          </Link>
       </div>
+      <Modal isOpen={showImageModal} toggle={toggleImageModal}>
+        <ModalHeader toggle={toggleImageModal}>Cargar archivo</ModalHeader>
+        <ModalBody>
+          <form>
+            <div className="mb-3">
+              <label htmlFor="imageInput" className="form-label">
+                Selecciona una imagen:
+              </label>
+              <input
+                type="file"
+                className="form-control"
+                id="imageInput"
+                onChange={handleFileChange}
+              />
+            </div>
+          </form>
+        </ModalBody>
+        <ModalFooter>
+          <Button className="btn-pink py-1 px-2 border-0" onClick={toggleImageModal}>
+            Cancelar
+          </Button>
+          <Button className="btn-pink py-1 px-2 border-0" onClick={handleUpload}>
+            Subir imagen
+          </Button>
+        </ModalFooter>
+      </Modal>
     </Container>
   );
 };
