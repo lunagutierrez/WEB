@@ -7,8 +7,8 @@ import menu_l from "../../assets/img/menu.png"
 import exit_l from "../../assets/img/exit.png"
 import { useContext } from 'react';
 import { Navbar, Container, Nav, NavbarToggler, Collapse } from 'reactstrap';
-import { NavLink, ScrollRestoration } from 'react-router-dom'
-import { AuthContext } from '../../context/auth'
+import { NavLink, ScrollRestoration } from 'react-router-dom';
+import { AuthContext } from '../../context/auth';
 
 
 const Header = () => {
