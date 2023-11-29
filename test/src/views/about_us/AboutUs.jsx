@@ -4,10 +4,6 @@ import './AboutUs.css'
 import nosotros from '../../assets/img/nosotros.png'
 import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import folleto from '../../assets/img/folleto.jpg';
-import volante from '../../assets/img/volante.jpeg';
-import oficina from '../../assets/img/oficina.jpeg';
-import postal from '../../assets/img/postal.jpg';
 
 
 function AboutUs() {

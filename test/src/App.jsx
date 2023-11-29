@@ -16,6 +16,9 @@ import Store from './views/store/Store'
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
 import Prod from './views/prod/Prod';
 import Cart from './views/cart/Cart';
+import AboutUsAdmin from './views/admin_views/about_us_admin/AboutUsAdmin';
+import Admin_landing from './views/admin_views/admin_landing/AdminLanding';
+import StoreAdmin from './views/admin_views/store_admin/StoreAdmin';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -78,7 +81,12 @@ const routes = [
   {
     path: "/admin",
     element: <AdminLayout/>,
-    children: [{
+    children: [
+    {
+      path: 'admin_landing',
+      element: <Admin_landing/>
+    },
+    {
       path: 'users',
       element: <Users/>
     },
@@ -89,6 +97,14 @@ const routes = [
     {
       path: 'edit_product',
       element: <EditProduct/>
+    },
+    {
+      path: 'about_us_admin',
+      element: <AboutUsAdmin/>
+    },
+    {
+      path: 'store_admin',
+      element: <StoreAdmin/>
     }
     ],
   }
