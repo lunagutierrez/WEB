@@ -11,8 +11,11 @@ import Layout from './components/layout/Layout';
 import AdminLayout from '../src/components/admin_components/admin_layout/AdminLayout';
 import Users from '../src/views/admin_views/users/Users';
 import Orders from '../src/views/admin_views/orders/Orders';
-import EditProduct from '../src/views/admin_views/edit_product/EditProduct';
-import Store from './views/store/Store'
+import Store from './views/store/Store';
+import EditProduct1 from './views/admin_views/edit_product/edit_product_1/EditProduct1';
+import EditProduct2 from './views/admin_views/edit_product/edit_product_2/EditProduct2';
+import EditProduct3 from './views/admin_views/edit_product/edit_product_3/EditProduct3';
+import NewProduct from './views/admin_views/new_product/NewProduct';
 import ForgottenPassword from './views/forgotten_password/ForgottenPassword';
 import Prod from './views/prod/Prod';
 import Cart from './views/cart/Cart';
@@ -95,17 +98,29 @@ const routes = [
       element: <Orders/>
     },
     {
-      path: 'edit_product',
-      element: <EditProduct/>
-    },
-    {
       path: 'about_us_admin',
       element: <AboutUsAdmin/>
     },
     {
       path: 'store_admin',
       element: <StoreAdmin/>
-    }
+    },
+    {
+      path: 'edit_product1',
+      element: <EditProduct1/>
+    },
+    {
+      path: 'edit_product2',
+      element: <EditProduct2/>
+    },
+    {
+      path: 'edit_product3',
+      element: <EditProduct3/>
+    },
+    {
+      path: 'add_product',
+      element: <NewProduct/>
+    },
     ],
   }
 ]

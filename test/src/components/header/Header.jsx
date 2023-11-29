@@ -7,7 +7,8 @@ import menu_l from "../../assets/img/menu.png"
 import exit_l from "../../assets/img/exit.png"
 import React from 'react';
 import { Navbar, Container, Nav, NavbarToggler, Collapse } from 'reactstrap';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+
 
 
 const Header = ({logged_in = true}) => {

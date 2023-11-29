@@ -1,6 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
-import './EditProduct.css';
 import { Container, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MaterialSelector from '../../../components/admin_components/material_selector/MaterialSelector';
@@ -9,11 +7,9 @@ import SizeSelector from '../../../components/admin_components/size_selector/Siz
 import TextureSelector from '../../../components/admin_components/texture_selector/TextureSelector';
 import EditBoxBig from '../../../components/admin_components/edit_box_big/EditBoxBig';
 import DescriptionBox from '../../../components/admin_components/description_box/DescriptionBox';
-import OptSel from '../../../components/inputs/optSel/OptSel'
 import ProdImgs from '../../../components/prod_desc/prodImgs/ProdImgs';
 import ProdCharsAdmin from '../../../components/admin_components/prod_chars_admin/ProdCharsAdmin';
 import ProdQAdmin from '../../../components/admin_components/prod_q_admin/ProdQAdmin';
-import ProdBuy from '../../../components/prod_desc/prodBuy/ProdBuy';
 
 const smallImageUrls = [
     'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
@@ -21,30 +17,7 @@ const smallImageUrls = [
     'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
   ];
 
-  const optionsForma = [
-    { value: 'c', label: 'Círculo' },
-    { value: 'r', label: 'Rectángulo' },
-    { value: 'cu', label: 'Cuadrado' },
-  ];
-  
-  const optionsTamaño = [
-    { value: 'l', label: 'Grande' },
-    { value: 'm', label: 'Mediano' },
-    { value: 's', label: 'Pequeño' },
-  ];
-  
-  const optionsMaterial = [
-    { value: 'm1', label: 'Material1' },
-    { value: 'm2', label: 'Material2' },
-    { value: 'm3', label: 'Material3' },
-  ];
-  
-  const optionsAcabado = [
-    { value: 'mate', label: 'Mate' },
-    { value: 'shiny', label: 'Brillante' },
-  ];
-  
-const Prod_desc = () => {
+const NewProduct = () => {
   return (
     <Container>
       <Row className="mb-4">
@@ -53,7 +26,7 @@ const Prod_desc = () => {
           <ProdImgs imageLinks={smallImageUrls} />
           <div class="caja-btn">
             <button class = "btn-rosa">
-              <span class="texto">AGREGAR/EDITAR IMAGENES</span>
+              <span class="texto">AGREGAR IMAGENES</span>
             </button>
           </div>
           </div>
@@ -91,4 +64,4 @@ const Prod_desc = () => {
   );
 };
 
-export default Prod_desc;
+export default NewProduct;

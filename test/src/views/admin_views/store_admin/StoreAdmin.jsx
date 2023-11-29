@@ -3,7 +3,7 @@ import { Row } from 'reactstrap';
 import Crumbs from '../../../components/crumbs/Crumbs';
 import Filter from '../../../components/inputs/filter/Filter';
 import SearchBar from '../../../components/inputs/searchbar/SearchBar';
-import Product from '../../../components/products/product/Product';
+import ProductAdmin from '../../../components/admin_components/products_admin/product_admin/ProductAdmin';
 import './StoreAdmin.css';
 
 const paths = [
@@ -16,41 +16,41 @@ const products = [
     image: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
     name: 'Sticker 1',
     price: 2500,
-    redirect: '/printlab/store/prod/1',
+    redirect: '/admin/edit_product1',
   },
   {
     image: 'https://staticecp.uprinting.com/9876/700x700/sticker-clear.webp',
     name: 'Sticker 2',
     price: 3000,
-    redirect: '/printlab/store/prod/2',
+    redirect: '/admin/edit_product2',
   },
   {
     image: 'https://staticecp.uprinting.com/6808/700x700/UP_Sheet_Sticker_PDP_Image_D.jpg',
     name: 'Sticker 3',
     price: 2000,
-    redirect: '/printlab/store/prod/3',
+    redirect: '/admin/edit_product3',
   },
   {
     image: 'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
     name: 'Sticker 4',
     price: 5000,
-    redirect: '/printlab/store/prod/4',
+    redirect: '/admin/edit_product1',
   },
   {
     image: 'https://staticecp.uprinting.com/9876/700x700/sticker-clear.webp',
     name: 'Sticker 5',
     price: 8000,
-    redirect: '/printlab/store/prod/5',
+    redirect: '/admin/edit_product2',
   },
   {
     image: 'https://staticecp.uprinting.com/6808/700x700/UP_Sheet_Sticker_PDP_Image_D.jpg',
     name: 'Sticker 6',
     price: 3000,
-    redirect: '/printlab/store/prod/6',
+    redirect: '/admin/edit_product3',
   },
 ];
 
-const Store = () => {
+const StoreAdmin = () => {
   const [selectedFilter, setSelectedFilter] = useState('');
 
   const filterProducts = () => {
@@ -80,7 +80,7 @@ const Store = () => {
       <div className="d-flex justify-content-center">
         <div className="product-container mx-5 px-5">
           {filteredProducts.map((product, index) => (
-            <Product
+            <ProductAdmin
               key={product.redirect}
               image={product.image}
               name={product.name}
@@ -94,4 +94,4 @@ const Store = () => {
   );
 };
 
-export default Store;
+export default StoreAdmin;

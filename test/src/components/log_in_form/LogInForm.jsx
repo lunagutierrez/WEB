@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import {Link, Routes, Route, useNavigate} from 'react-router-dom';
-import InputBox from'../input_box/InputBox'
+import InputBox from'../input_box/InputBox';
 
 import { Container, Row, Col } from 'reactstrap';
 
