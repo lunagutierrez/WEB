@@ -16,9 +16,9 @@ import ProdQAdmin from '../../../../components/admin_components/prod_q_admin/Pro
 import ProdBuy from '../../../../components/prod_desc/prodBuy/ProdBuy';
 
 const smallImageUrls = [
-    'https://staticecp.uprinting.com/6802/700x700/UP_CTS_PDP_Image_C.jpg',
-    'https://staticecp.uprinting.com/5754/700x700/UP_Stickers_and_Labels_Cut_to_Size_Gallery_1_A.jpg',
-    'https://staticecp.uprinting.com/1016/700x700/Custom_Sticker_Crack_and_Peel_B_1400x1400.jpg'
+      'https://staticecp.uprinting.com/6808/700x700/UP_Sheet_Sticker_PDP_Image_D.jpg',
+      'https://staticecp.uprinting.com/7335/700x700/Custom_Sticker_Sheets_PDP_A2.jpg',
+      'https://staticecp.uprinting.com/5786/600x600/C_Boost_Sticker_Sheet_Overview_Image1.jpg'
   ];
 
 const EditProduct3 = () => {

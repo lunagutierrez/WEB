@@ -10,3 +10,8 @@
     margin-bottom: 20px;
   }
   
+  .caja-agregar-producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

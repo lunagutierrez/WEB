@@ -4,6 +4,7 @@ import Crumbs from '../../../components/crumbs/Crumbs';
 import Filter from '../../../components/inputs/filter/Filter';
 import SearchBar from '../../../components/inputs/searchbar/SearchBar';
 import ProductAdmin from '../../../components/admin_components/products_admin/product_admin/ProductAdmin';
+import { Link } from 'react-router-dom';
 import './StoreAdmin.css';
 
 const paths = [
@@ -89,6 +90,13 @@ const StoreAdmin = () => {
             />
           ))}
         </div>
+      </div>
+      <div class="caja-agregar-producto">
+        <Link to="/admin/add_product">
+          <button className="btn-pink py-1 px-2 border-0">
+              Agregar nuevo producto
+          </button>
+        </Link>
       </div>
     </>
   );
